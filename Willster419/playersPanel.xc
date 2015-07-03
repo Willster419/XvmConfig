@@ -76,8 +76,13 @@
       "vehicleFormatRight": "<font color='{{c:xwn}}'>{{vehicle}}</font>",
       "fragsFormatLeft": "{{frags}}",
       "fragsFormatRight": "{{frags}}",
-	  "extraFieldsLeft": [],
+	  "extraFieldsLeft": [
+			${"hpBg"},
+			${"hpRatio"}
+			],
       "extraFieldsRight": [
+			${"hpBg"},
+			${"hpRatio"},
 			${"enemySpottedMarker"},
 			${"enemyHpLeft"}
 			],
