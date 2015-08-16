@@ -5,7 +5,7 @@
           "contourIcon": { "alpha": 100, "amount": 0, "color": null, "visible": false, "x": 6, "y": -84 },
           "damageText": {
             "alpha": 100,
-            "blowupMessage": "Blown to shit!",
+            "blowupMessage": "ammoREKT!",
             "color": "0x0000FF",
             "damageMessage": "{{dmg}}",
             "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 18 },
@@ -18,7 +18,7 @@
           },
           "damageTextPlayer": {
             "alpha": 100,
-            "blowupMessage": "Blown to shit!",
+            "blowupMessage": "ammoREKT!",
             "color": null,
             "damageMessage": "{{dmg}}",
             "font": { "align": "center", "bold": false, "italic": false, "name": "$FieldFont", "size": 18 },
@@ -31,7 +31,7 @@
           },
           "damageTextSquadman": {
             "alpha": 100,
-            "blowupMessage": "Blown to shit!",
+            "blowupMessage": "ammoREKT!",
             "color": null,
             "damageMessage": "{{dmg}}",
             "font": { "align": "center", "bold": false, "italic": false, "name": "$FieldFont", "size": 18 },
@@ -99,7 +99,7 @@
           "contourIcon": { "alpha": 100, "amount": 0, "color": null, "visible": false, "x": 6, "y": -84 },
           "damageText": {
             "alpha": 100,
-            "blowupMessage": "Blown to shit!",
+            "blowupMessage": "ammoREKT!",
             "color": "0x0000FF",
             "damageMessage": "{{dmg}}",
             "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 18 },
@@ -112,7 +112,7 @@
           },
           "damageTextPlayer": {
             "alpha": 100,
-            "blowupMessage": "Blown to shit!",
+            "blowupMessage": "ammoREKT!",
             "color": null,
             "damageMessage": "{{dmg}}",
             "font": { "align": "center", "bold": false, "italic": false, "name": "$FieldFont", "size": 18 },
@@ -125,7 +125,7 @@
           },
           "damageTextSquadman": {
             "alpha": 100,
-            "blowupMessage": "Blown to shit!",
+            "blowupMessage": "ammoREKT!",
             "color": null,
             "damageMessage": "{{dmg}}",
             "font": { "align": "center", "bold": false, "italic": false, "name": "$FieldFont", "size": 18 },
