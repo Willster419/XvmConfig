@@ -69,7 +69,7 @@
     "france-F44_Somua_S35":                 {"name": null, "short": null},
     "france-F49_RenaultR35":                {"name": null, "short": null},
     "france-F50_FCM36_20t":                 {"name": null, "short": null},
-    "france-F68_AMX_Chasseur_de_char_46":   {"name": "AMX AC|DC", "short": null},
+    "france-F68_AMX_Chasseur_de_char_46":   {"name": "AMX CDC", "short": null},
     "france-F69_AMX13_57_100":              {"name": null, "short": null},
     "france-F69_AMX13_57_100_GrandFinal":   {"name": null, "short": null},
     "france-F70_SARL42":                    {"name": null, "short": null},

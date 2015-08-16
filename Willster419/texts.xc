@@ -17,13 +17,13 @@
     },
 	"spotted": {
       "neverSeen": "",
-      "lost": "<img src='xvm://res/icons/enemy_spotted_marker/lost.png' width='22' height='22'>",
-      "revealed": "<img src='xvm://res/icons/enemy_spotted_marker/revealed.png' width='22' height='22'>",
-      "dead": "",
+      "lost": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>",
+      "revealed": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#FF0000\">*</FONT>",
+      "dead": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#006000\">*</FONT>",
       "neverSeen_arty": "",
-      "lost_arty": "<img src='xvm://res/icons/enemy_spotted_marker/lost.png' width='22' height='22'>",
-      "revealed_arty": "<img src='xvm://res/icons/enemy_spotted_marker/revealed.png' width='22' height='22'>",
-      "dead_arty": ""
+      "lost_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>",
+      "revealed_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#FF0000\">*</FONT>",
+      "dead_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#006000\">*</FONT>"
     },
 	"xvmuser": {
       "on": "on",
