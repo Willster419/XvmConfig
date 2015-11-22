@@ -3,14 +3,14 @@
   // Параметры панелей игроков ("ушей").
   	"enemySpottedMarker": {
 	  "alpha": 100,
-	  "x": -35,
-	  "y": 0,
+	  "x": -15,
+	  "y": 1,
 	  "bindToIcon": true,
 	  "format": "{{spotted}}",
 	  "shadow": {}
 	},
 	"enemyHpLeft": {
-		"x": -55, 
+		"x": -40, 
 		"y": 11, 
 		"alpha": "{{a:spotted}}", 
 		"bindToIcon": true, 

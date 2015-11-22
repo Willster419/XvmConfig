@@ -18,11 +18,11 @@
 	"spotted": {
       "neverSeen": "",
       "lost": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>",
-      "revealed": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#FF0000\">*</FONT>",
+      "spotted": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#FF0000\">*</FONT>",
       "dead": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#006000\">*</FONT>",
       "neverSeen_arty": "",
       "lost_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>",
-      "revealed_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#FF0000\">*</FONT>",
+      "spotted_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#FF0000\">*</FONT>",
       "dead_arty": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#006000\">*</FONT>"
     },
 	"xvmuser": {
