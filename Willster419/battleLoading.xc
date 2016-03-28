@@ -2,7 +2,7 @@
   // Parameters of the Battle Loading screen.
   // Параметры экрана загрузки боя.
   "battleLoading": {
-    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 60, "xr": 60, "y": 6, "yr": 6 },
+    "clanIcon": { "alpha": 90, "h": 16, "show": false, "w": 16, "x": 60, "xr": 60, "y": 6, "yr": 6 },
     "clockFormat": "H:i:s",
     "removeSquadIcon": false,
     "showChances": true,
