@@ -13,7 +13,7 @@
       "alpha": 80,
       "columnGap": 10,
       "delimiter": ": ",
-      "enabled": true,
+      "enabled": false,
       "fontStyle": {
         "bold": false,
         "color": { "bad": "0xD64D4D", "good": "0xE5E4E1", "great": "0xFFCC66", "poor": "0x96948F" },
