@@ -49,7 +49,7 @@
 	},
   "playersPanel": {
     "alpha": 60,
-    "clanIcon": { "alpha": 90, "h": 16, "show": false, "w": 16, "x": 0, "xr": 0, "y": 6, "yr": 6 },
+    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 0, "xr": 0, "y": 6, "yr": 6 },
     "startMode": "large",
 	"none": {
       "extraTextFields": {

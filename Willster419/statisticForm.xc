@@ -3,7 +3,7 @@
   // Параметры окна статистики по клавише Tab.
   "statisticForm": {
     "removeSquadIcon": false,
-	"clanIcon": { "alpha": 90, "h": 16, "show": false, "w": 16, "x": 60, "xr": 60, "y": 6, "yr": 6 },
+	"clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 60, "xr": 60, "y": 6, "yr": 6 },
     "showChances": true,
     "showBattleTier": true,
 	"showChancesLive": true,
