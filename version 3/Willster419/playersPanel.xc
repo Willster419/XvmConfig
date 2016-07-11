@@ -55,7 +55,13 @@
 	"xTE": {
 		"x": 0, 
 		"y": 2,
-		"format": "<font size='13' alpha='{{alive?#FF|#80}}' color='#FFFFFF'>[<font face='Liberation Mono' color='{{c:xte}}'>{{xte%2s|--}}</font>]</font>",
+		"format": "<font color='{{c:xte}}' alpha='{{alive?#FF|#80}}'>{{xte%2s|--}}</font>",
+		"shadow": {}
+	},
+	"VN": {
+		"x": 5, 
+		"y": 2,
+		"format": "<font color='{{c:r}}'>{{vehicle}}</font>",
 		"shadow": {}
 	},
 	"frags": {
@@ -64,6 +70,14 @@
 		"align": "center",
 		"bindToIcon": true,
 		"format": "<font size='13' alpha='{{player?#FF|{{alive?#FF|#80}}}}' color='{{player?#FDC25A|#FFFFFF}}'>{{frags}}</font>",
+		"shadow": {}
+	},
+	"frags2": {
+		"x": -92, 
+		"y": 2,
+		"align": "center",
+		"bindToIcon": true,
+		"format": "{{frags}}",
 		"shadow": {}
 	},
   // XMQP service marker definition.
@@ -198,7 +212,7 @@
       "enabled": true,
       // Minimum width of the column, 0-250. Default is 0.
       // Минимальная ширина поля, 0-250. По умолчанию: 0.
-      "width": 10,
+      "width": 50,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -207,8 +221,8 @@
       "vehicleLevelAlpha": 100,
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
-      "fragsFormatLeft": "<font color='{{c:r}}'>{{frags}}</font>",
-      "fragsFormatRight": "<font color='{{c:r}}'>{{frags}}</font>",
+      "fragsFormatLeft": "",
+      "fragsFormatRight": "",
       // Extra fields. Each field have size 350x25. Fields are placed one above the other.
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
@@ -216,6 +230,8 @@
       "extraFieldsLeft": [
         // XMQP service marker (see above).
         // Маркер сервиса XMQP (см. выше).
+		${"VN"},
+		${"frags2"},
         ${"xmqpServiceMarker"}
       ],
       // Set of formats for right panel (extended format supported, see above)
@@ -224,6 +240,8 @@
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
         ${"enemySpottedMarker"},
+		${"VN"},
+		${"frags2"},
 		${"enemyHpLeft"}
       ]
     },
@@ -234,7 +252,7 @@
       "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 46.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 46.
-      "width": 135,
+      "width": 145,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
