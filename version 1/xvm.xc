@@ -46,7 +46,7 @@
   },
   "hangar": {
     "hidePricesInTechTree": false,
-    "hideTutorial": true,
+    "hideTutorial": false,
     "masteryMarkInTankCarousel": true,
     "masteryMarkInTechTree": true,
     "pingServers": {
