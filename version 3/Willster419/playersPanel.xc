@@ -8,10 +8,10 @@
   "enemySpottedMarker": {
     // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
     // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
-    "alpha": "{{a:spotted}}",
+    "alpha": 100,
     // x position.
     // положение по горизонтали.
-    "x": 6,
+    "x": -35,
     // y position.
     // положение по вертикали.
     "y": 1,
@@ -23,11 +23,49 @@
     "bindToIcon": true,
     // enemy spotted status marker format.
     // формат маркера статуса засвета.
-    "format": "<font color='{{c:spotted}}'>{{spotted}}</font>",
+    "format": "{{spotted}}",
     // shadow (see below).
     // настройки тени (см. ниже).
     "shadow": {}
   },
+	"enemyHpLeft": {
+		"x": -20, 
+		"y": 11, 
+		"alpha": "{{a:spotted}}", 
+		"bindToIcon": true, 
+		"format": "<font face='Arial' size='10' color='#FFFFFF'><b>{{hp-ratio%d~%}}</b></font>",
+		"shadow": {}
+	},
+	"hpBg": {
+		"x": 0, 
+		"y": 1, 
+		"w": 135, 
+		"h": 2, 
+		"alpha": "{{alive?80|0}}", 
+		"bgColor": 0
+	},
+	"hpRatio": {
+		"x": 0, 
+		"y": 1, 
+		"w": "{{hp-ratio:135}}", 
+		"h": 2,
+		"alpha": "{{alive?80|0}}", 		
+		"bgColor": "{{player?0xFFDD33|{{c:system}}}}"
+	},
+	"xTE": {
+		"x": 0, 
+		"y": 2,
+		"format": "<font size='13' alpha='{{alive?#FF|#80}}' color='#FFFFFF'>[<font face='Liberation Mono' color='{{c:xte}}'>{{xte%2s|--}}</font>]</font>",
+		"shadow": {}
+	},
+	"frags": {
+		"x": -92, 
+		"y": 2,
+		"align": "center",
+		"bindToIcon": true,
+		"format": "<font size='13' alpha='{{player?#FF|{{alive?#FF|#80}}}}' color='{{player?#FDC25A|#FFFFFF}}'>{{frags}}</font>",
+		"shadow": {}
+	},
   // XMQP service marker definition.
   // Шаблон маркера сервиса XMQP.
   "xmqpServiceMarker": {
@@ -160,7 +198,7 @@
       "enabled": true,
       // Minimum width of the column, 0-250. Default is 0.
       // Минимальная ширина поля, 0-250. По умолчанию: 0.
-      "width": 0,
+      "width": 10,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -169,8 +207,8 @@
       "vehicleLevelAlpha": 100,
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
-      "fragsFormatLeft": "{{frags}}",
-      "fragsFormatRight": "{{frags}}",
+      "fragsFormatLeft": "<font color='{{c:r}}'>{{frags}}</font>",
+      "fragsFormatRight": "<font color='{{c:r}}'>{{frags}}</font>",
       // Extra fields. Each field have size 350x25. Fields are placed one above the other.
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
@@ -185,7 +223,8 @@
       "extraFieldsRight": [
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
-        ${"enemySpottedMarker"}
+        ${"enemySpottedMarker"},
+		${"enemyHpLeft"}
       ]
     },
     // Options for the "medium" panels - the first of the medium panels.
@@ -195,7 +234,7 @@
       "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 46.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 46.
-      "width": 46,
+      "width": 135,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -204,10 +243,10 @@
       "vehicleLevelAlpha": 100,
       // Display format for the left panel (macros allowed, see macros.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-      "formatLeft": "<font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font> <font alpha='#A0'>{{clan}}</font>",
+      "formatLeft": "<font color='{{c:winrate}}'>{{nick}}</font>",
       // Display format for the right panel (macros allowed, see macros.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
-      "formatRight": "<font alpha='#A0'>{{clan}}</font> <font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{name%.12s~..}}</font>",
+      "formatRight": "<font color='{{c:winrate}}'>{{nick}}</font>",
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -219,14 +258,19 @@
       "extraFieldsLeft": [
         // XMQP service marker (see above).
         // Маркер сервиса XMQP (см. выше).
-        ${"xmqpServiceMarker"}
+        ${"xmqpServiceMarker"},
+		${"hpBg"},
+		${"hpRatio"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
-        ${"enemySpottedMarker"}
+        ${"hpBg"},
+		${"hpRatio"},
+		${"enemySpottedMarker"},
+		${"enemyHpLeft"}
       ]
     },
     // Options for the "medium2" panels - the second of the medium panels.
@@ -236,7 +280,7 @@
       "enabled": true,
       // Maximum width of the vehicle name column, 0-250. Default is 65.
       // Максимальная ширина поля названия танка, 0-250. По умолчанию: 65.
-      "width": 65,
+      "width": 145,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -245,14 +289,14 @@
       "vehicleLevelAlpha": 100,
       // Display format for the left panel (macros allowed, see macros.txt).
       // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-      "formatLeft": "<font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
+      "formatLeft": "<font color='{{c:r}}'>{{vehicle}}</font>",
       // Display format for the right panel (macros allowed, see macros.txt).
       // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
-      "formatRight": "<font color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{vehicle}}</font>",
+      "formatRight": "<font color='{{c:r}}'>{{vehicle}}</font>",
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
-      "fragsFormatLeft": "{{frags}}",
-      "fragsFormatRight": "{{frags}}",
+      "fragsFormatLeft": "",
+      "fragsFormatRight": "",
       // Extra fields. Each field have size 350x25. Fields are placed one above the other.
       // Дополнительные поля. Каждое поле имеет размер 350x25. Поля располагаются друг над другом.
       // Set of formats for left panel (extended format supported, see above)
@@ -260,14 +304,23 @@
       "extraFieldsLeft": [
         // XMQP service marker (see above).
         // Маркер сервиса XMQP (см. выше).
-        ${"xmqpServiceMarker"}
+        ${"xmqpServiceMarker"},
+		${"hpBg"},
+		${"hpRatio"},
+		${"xTE"},
+		${"frags"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
-        ${"enemySpottedMarker"}
+        ${"hpBg"},
+		${"hpRatio"},
+		${"xTE"},
+		${"frags"},
+		${"enemySpottedMarker"},
+		${"enemyHpLeft"}
       ]
     },
     // Options for the "large" panels - the widest panels.
@@ -277,7 +330,7 @@
       "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 170.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 170.
-      "width": 100,
+      "width": 170,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -286,12 +339,12 @@
       "vehicleLevelAlpha": 100,
       // Display format for player nickname (macros allowed, see macros.txt).
       // Формат отображения имени игрока (допускаются макроподстановки, см. macros.txt).
-      "nickFormatLeft": "<font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font> {{name%.15s~..}} <font alpha='#A0'>{{clan}}</font>",
-      "nickFormatRight": "<font alpha='#A0'>{{clan}}</font> {{name%.15s~..}} <font face='mono' size='{{xvm-stat?13|0}}' color='{{c:r}}' alpha='{{alive?#FF|#80}}'>{{r}}</font>",
+      "nickFormatLeft": "<font color='{{c:winrate}}'>{{winrate%2d~%}}</font> {{nick}}",
+      "nickFormatRight": "{{nick}} <font color='{{c:winrate}}'>{{winrate%2d~%}}</font>",
       // Display format for vehicle name (macros allowed, see macros.txt).
       // Формат отображения названия танка (допускаются макроподстановки, см. macros.txt).
-      "vehicleFormatLeft": "{{vehicle}}",
-      "vehicleFormatRight": "{{vehicle}}",
+      "vehicleFormatLeft": "<font color='{{c:r}}'>{{vehicle}}</font>",
+      "vehicleFormatRight": "<font color='{{c:r}}'>{{vehicle}}</font>",
       // Display format for frags (macros allowed, see macros.txt).
       // Формат отображения фрагов (допускаются макроподстановки, см. macros.txt).
       "fragsFormatLeft": "{{frags}}",
@@ -303,14 +356,19 @@
       "extraFieldsLeft": [
         // XMQP service marker (see above).
         // Маркер сервиса XMQP (см. выше).
-        ${"xmqpServiceMarker"}
+        ${"xmqpServiceMarker"},
+		${"hpBg"},
+		${"hpRatio"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
       "extraFieldsRight": [
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
-        ${"enemySpottedMarker"}
+        ${"hpBg"},
+		${"hpRatio"},
+		${"enemySpottedMarker"},
+		${"enemyHpLeft"}
       ]
     }
   }

@@ -46,11 +46,11 @@
   "definition": {
     // Config author.
     // Автор конфига.
-    "author": "XVM team",
+    "author": "Willster419",
 
     // Config description.
     // Описание конфига.
-    "description": "Default settings for XVM",
+    "description": "Default settings for XVM with Willster419 modifications",
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
@@ -58,7 +58,7 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "10.06.2016",
+    "date": "10.07.2016",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.

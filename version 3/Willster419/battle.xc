@@ -9,7 +9,7 @@
     "mirroredVehicleIcons": true,
     // false - Disable pop-up panel at the bottom after death.
     // false - отключить всплывающую внизу панель после смерти.
-    "showPostmortemTips": true,
+    "showPostmortemTips": false,
     // false - disable highlighting of own vehicle icon and squad.
     // false - отключить подсветку иконки своего танка и взвода.
     "highlightVehicleIcon": true,
@@ -18,7 +18,7 @@
     "allowSpottedStatus": true,
     // true - enable {{hp*}} macros ability in players panels and minimap. WARNING: performance expensive
     // true - включить возможность {{hp*}} макросов в ушах и на миникарте. ВНИМАНИЕ: может понизить производительность
-    "allowHpInPanelsAndMinimap": false,
+    "allowHpInPanelsAndMinimap": true,
     // true - enable {{marksOnGun}} macro in players panels and minimap. WARNING: performance expensive
     // true - включить макрос {{marksOnGun}} в ушах и на миникарте. ВНИМАНИЕ: может понизить производительность
     "allowMarksOnGunInPanelsAndMinimap": false,
@@ -33,7 +33,7 @@
     "clanIconsFolder": "clanicons/",
     // Path to sixth sense icon ("" for original icon).
     // Путь к иконке 6-го чувства ("" для оригинальной иконки).
-    "sixthSenseIcon": "xvm://res/SixthSense.png",
+    "sixthSenseIcon": "",
     // GUI elements settings (experts only)
     // Настройки графических элементов (только для экспертов!)
     "elements": ${"elements.xc":"elements"},
@@ -56,9 +56,9 @@
   "expertPanel": {
     // Delay for panel disappear. Original value was 5.
     // Задержка исчезновения панели. Оригинальное значение было 5.
-    "delay": 15,
+    "delay": 5,
     // Panel scaling. Original value was 100.
     // Увеличение панели. 100 в оригинале.
-    "scale": 150
+    "scale": 100
   }
 }

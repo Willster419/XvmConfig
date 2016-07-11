@@ -15,7 +15,7 @@
     "enableFreeXpLocker": false,
     // true - Use credits instead of gold as default currency for ammo and equipment
     // true - Использовать кредиты, а не золото как валюту по умолчанию для снарядов и снаряжения
-    "defaultBoughtForCredits": false,
+    "defaultBoughtForCredits": true,
     // true - Hide price button in tech tree
     // true - Прятать кнопку с ценой в дереве исследований
     "hidePricesInTechTree": false,
@@ -27,7 +27,7 @@
     "allowExchangeXPInTechTree": true,
     // true - Enable crew auto return function
     // true - Включить функцию автовозврата экипажа
-    "enableCrewAutoReturn": true,
+    "enableCrewAutoReturn": false,
     // true - Return crew check box is selected by default
     // true - Включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
@@ -42,7 +42,7 @@
     "enableEquipAutoReturn": false,
     // true - Make vehicle not ready for battle if low ammo
     // true - Сделать машину не готовой к битве если мало снарядов
-    "blockVehicleIfLowAmmo": false,
+    "blockVehicleIfLowAmmo": true,
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
     "lowAmmoPercentage": 20,
@@ -54,7 +54,7 @@
     "pingServers": {
       // true - Enable display of ping to the servers
       // true - показывать пинг до серверов
-      "enabled": false,
+      "enabled": true,
       // Update interval, in ms
       // Интервал обновления, в мс
       "updateInterval": 10000,
@@ -88,7 +88,7 @@
       "topmost": true,
       // true - show title "Ping"
       // true - показывать заголовок "Пинг"
-      "showTitle": true,
+      "showTitle": false,
       // true - show server names in list
       // true - показывать названия серверов в списке
       "showServerName": true,
