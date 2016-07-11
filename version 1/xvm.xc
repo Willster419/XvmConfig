@@ -13,7 +13,7 @@
     "modMinVersion": "5.0.0",
     "url": "http://code.google.com/p/wot-xvm/"
   },
-  "rating": {
+  "Win Rate": {
     "enableCompanyStatistics": true,
     "enableStatisticsLog": true,
     "enableUserInfoStatistics": true,
@@ -92,22 +92,22 @@
     "showPostmortemTips": false
   },
   "battleLoading": {
-    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 0, "xr": 0, "y": 6, "yr": 6 },
+    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 60, "xr": 60, "y": 6, "yr": 6 },
     "clockFormat": "H:i:s",
     "formatLeftNick": "{{name}}{{clan}}",
-    "formatLeftVehicle": "{{vehicle}}<font face='Lucida Console' size='12'> <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:rating}}'>{{rating:3}}</font></font>",
+    "formatLeftVehicle": "{{vehicle}}<font face='Lucida Console' size='12'> <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>",
     "formatRightNick": "{{name}}{{clan}}",
-    "formatRightVehicle": "<font face='Lucida Console' size='12'><font color='{{c:rating}}'>{{rating:3}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> </font>{{vehicle}}",
+    "formatRightVehicle": "<font face='Lucida Console' size='12'><font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> </font>{{vehicle}}",
     "removeSquadIcon": false,
     "showBattleTier": true,
     "showChances": true
   },
   "statisticForm": {
-    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 0, "xr": 0, "y": 6, "yr": 6 },
+    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 60, "xr": 60, "y": 6, "yr": 6 },
     "formatLeftNick": "{{nick}}",
-    "formatLeftVehicle": "{{vehicle}}<font face='Lucida Console' size='12'> <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:rating}}'>{{rating:3}}</font></font>",
+    "formatLeftVehicle": "{{vehicle}}<font face='Lucida Console' size='12'> <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>",
     "formatRightNick": "{{nick}}",
-    "formatRightVehicle": "<font face='Lucida Console' size='12'><font color='{{c:rating}}'>{{rating:3}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> </font>{{vehicle}}",
+    "formatRightVehicle": "<font face='Lucida Console' size='12'><font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font> <font color='{{c:xwn}}'>{{xwn}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> </font>{{vehicle}}",
     "removeSquadIcon": false,
     "showBattleTier": true,
     "showChances": true,
@@ -115,7 +115,7 @@
   },
   "playersPanel": {
     "alpha": 60,
-    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": 0, "xr": 0, "y": 6, "yr": 6 },
+    "clanIcon": { "alpha": 90, "h": 16, "show": true, "w": 16, "x": -100, "xr": -100, "y": 6, "yr": 6 },
     "enemySpottedMarker": {
       "Xoffset": -22,
       "Yoffset": -2,
@@ -135,8 +135,8 @@
     },
     "iconAlpha": 100,
     "large": {
-      "nickFormatLeft": "<font color='{{c:rating}}'>{{rating}}</font> {{nick}}",
-      "nickFormatRight": "{{nick}} <font color='{{c:rating}}'>{{rating}}</font>",
+      "nickFormatLeft": "<font color='{{c:winrate}}'>{{winrate%2d~%}}</font> {{nick}}",
+      "nickFormatRight": "{{nick}} <font color='{{c:winrate}}'>{{winrate%2d~%}}</font>",
       "vehicleFormatLeft": "<font color='{{c:xwn}}'>{{vehicle}}</font>",
       "vehicleFormatRight": "<font color='{{c:xwn}}'>{{vehicle}}</font>",
       "width": 170
@@ -521,10 +521,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:rating}}",
+              "color": "{{c:winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{rating}}",
-              "name": "Rating",
+              "format": "{{winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -626,10 +626,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:t-rating}}",
+              "color": "{{c:t-winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{t-rating}}",
-              "name": "Rating",
+              "format": "{{t-winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -744,10 +744,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:rating}}",
+              "color": "{{c:winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{rating}}",
-              "name": "Rating",
+              "format": "{{winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -838,10 +838,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:t-rating}}",
+              "color": "{{c:t-winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{t-rating}}",
-              "name": "Rating",
+              "format": "{{t-winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -958,10 +958,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:rating}}",
+              "color": "{{c:winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{rating}}",
-              "name": "Rating",
+              "format": "{{winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -1063,10 +1063,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:t-rating}}",
+              "color": "{{c:t-winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{t-rating}}",
-              "name": "Rating",
+              "format": "{{t-winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -1181,10 +1181,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:rating}}",
+              "color": "{{c:winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{rating}}",
-              "name": "Rating",
+              "format": "{{winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -1275,10 +1275,10 @@
             },
             {
               "alpha": 100,
-              "color": "{{c:t-rating}}",
+              "color": "{{c:t-winrate}}",
               "font": { "align": "center", "bold": true, "italic": false, "name": "$FieldFont", "size": 11 },
-              "format": "{{t-rating}}",
-              "name": "Rating",
+              "format": "{{t-winrate%2d~%}}",
+              "name": "Win Rate",
               "shadow": { "alpha": 100, "angle": 90, "color": "0x000000", "distance": 0, "size": 4, "strength": 150 },
               "visible": true,
               "x": 0,
@@ -1449,7 +1449,7 @@
       { "value": 9, "color": "0x02C9B3" },
       { "value": 20, "color": "0xD042F3" }
     ],
-    "rating": [
+    "Win Rate": [
       { "value": 47, "color": "0xFE0E00" },
       { "value": 49, "color": "0xFE7903" },
       { "value": 52, "color": "0xF8F400" },
@@ -1560,7 +1560,7 @@
       { "value": 9, "alpha": 60 },
       { "value": 20, "alpha": 40 }
     ],
-    "rating": [
+    "Win Rate": [
       { "value": 49, "alpha": 100 },
       { "value": 53, "alpha": 80 },
       { "value": 60, "alpha": 60 },
