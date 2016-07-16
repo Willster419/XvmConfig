@@ -39,29 +39,29 @@
     "nameFieldOffsetXRight": 0,
     // X offset for "formatLeftVehicle" field
     // Cмещение по оси X поля названия танка союзников
-    "vehicleFieldOffsetXLeft": 0,
+    "vehicleFieldOffsetXLeft": 4,
     // X offset for "formatRightVehicle" field
     // Cмещение по оси X поля названия танка противников
-    "vehicleFieldOffsetXRight": 0,
+    "vehicleFieldOffsetXRight": 4,
     // X offset for allies vehicle icons
     // Смещение по оси X иконки танка союзников
-    "vehicleIconOffsetXLeft": 4,
+    "vehicleIconOffsetXLeft": 16,
     // X offset for enemies vehicle icons
     // Смещение по оси X иконки танка противников
-    "vehicleIconOffsetXRight": 0,
+    "vehicleIconOffsetXRight": 12,
     // X offset for allies frags
     // Смещение по оси X фрагов союзников
-    "fragsOffsetXLeft": 8,
+    "fragsOffsetXLeft": 12,
     // X offset for enemies frags
     // Смещение по оси X фрагов противников
-    "fragsOffsetXRight": 0,
+    "fragsOffsetXRight": 4,
     // Display options for Team/Clan logos.
     // Параметры отображения иконки игрока/клана.
     "clanIcon": {
       "show": true,
-      "x": 60,
+      "x": 65,
       "y": 6,
-      "xr": 60,
+      "xr": 65,
       "yr": 6,
       "w": 16,
       "h": 16,
@@ -69,15 +69,15 @@
     },
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-    "formatLeftNick": "<img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font size='13'>{{name%.14s~..}}{{clan}}</font>",
+    "formatLeftNick": "<img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font size='13'>{{name%.16s~..}}{{clan}}</font>",
     // Display format for the right panel (macros allowed, see macros.txt).
     // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
-    "formatRightNick": "<font size='13'>{{name%.14s~..}}{{clan}}</font> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'>",
+    "formatRightNick": "<font size='13'>{{name%.16s~..}}{{clan}}</font> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'>",
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
-    "formatLeftVehicle": "{{vehicle}}<font face='Lucida Console' size='12' alpha='{{alive?#FF|#80}}'> <font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> <font color='{{c:r}}'>{{r}}</font> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font></font>",
+    "formatLeftVehicle": "{{vehicle}}<font size='13'> <font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> <font color='{{c:r}}'>{{r}}</font> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font> <font color='{{c:avglvl}}'>t{{avglvl%1.1f}}</font></font>",
     // Display format for the right panel (macros allowed, see macros.txt).
     // Формат отображения для правой панели (допускаются макроподстановки, см. macros.txt).
-    "formatRightVehicle": "<font face='Lucida Console' size='12' alpha='{{alive?#FF|#80}}'> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font> <font color='{{c:r}}'>{{r}}</font> <font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> </font>{{vehicle}}"
+    "formatRightVehicle": "<font size='13'> <font color='{{c:avglvl}}'>t{{avglvl%1.1f}}</font> <font color='{{c:winrate}}'>{{winrate%2d~%|--%}}</font> <font color='{{c:r}}'>{{r}}</font> <font color='{{c:kb}}'>{{kb%2d~k|--k}}</font> </font>{{vehicle}}"
   }
 }

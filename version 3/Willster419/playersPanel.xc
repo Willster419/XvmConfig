@@ -11,7 +11,7 @@
     "alpha": 100,
     // x position.
     // положение по горизонтали.
-    "x": -35,
+    "x": -25,
     // y position.
     // положение по вертикали.
     "y": 1,
@@ -83,7 +83,7 @@
   // XMQP service marker definition.
   // Шаблон маркера сервиса XMQP.
   "xmqpServiceMarker": {
-    "x": 6, "y": 1, "align": "center", "bindToIcon": true, 
+    "x": 2, "y": 1, "align": "center", "bindToIcon": true, 
     "format": "<font face='xvm' size='23' color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}|&#x76;}}</font>",
     "shadow": {}
   },
@@ -212,7 +212,7 @@
       "enabled": true,
       // Minimum width of the column, 0-250. Default is 0.
       // Минимальная ширина поля, 0-250. По умолчанию: 0.
-      "width": 50,
+      "width": 15,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -230,7 +230,6 @@
       "extraFieldsLeft": [
         // XMQP service marker (see above).
         // Маркер сервиса XMQP (см. выше).
-		${"VN"},
 		${"frags2"},
         ${"xmqpServiceMarker"}
       ],
@@ -240,7 +239,6 @@
         // enemy spotted status marker (see above).
         // маркер статуса засвета противника (см. выше).
         ${"enemySpottedMarker"},
-		${"VN"},
 		${"frags2"},
 		${"enemyHpLeft"}
       ]
@@ -252,7 +250,7 @@
       "enabled": true,
       // Minimum width of the player's name column, 0-250. Default is 46.
       // Минимальная ширина поля имени игрока, 0-250. По умолчанию: 46.
-      "width": 145,
+      "width": 105,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -298,7 +296,7 @@
       "enabled": true,
       // Maximum width of the vehicle name column, 0-250. Default is 65.
       // Максимальная ширина поля названия танка, 0-250. По умолчанию: 65.
-      "width": 145,
+      "width": 105,
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -325,7 +323,6 @@
         ${"xmqpServiceMarker"},
 		${"hpBg"},
 		${"hpRatio"},
-		${"xTE"},
 		${"frags"}
       ],
       // Set of formats for right panel (extended format supported, see above)
@@ -335,7 +332,6 @@
         // маркер статуса засвета противника (см. выше).
         ${"hpBg"},
 		${"hpRatio"},
-		${"xTE"},
 		${"frags"},
 		${"enemySpottedMarker"},
 		${"enemyHpLeft"}
