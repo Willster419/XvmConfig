@@ -14,42 +14,94 @@
       // Axis field coordinates
       // Положение поля по осям
       "x": 0,
-      "y": -67,
+      "y": -100,
       // Opacity (dynamic transparency allowed, see macros.txt).
       // Прозрачность (допускается использование динамической прозрачности, см. macros.txt)
       "alpha": 100,
       // Color (dynamic colors allowed, see macros.txt).
       // Цвет (допускается использование динамического цвета, см. macros.txt)
-      "color": null,
+      "color": "0x0000FF",
       // Параметры шрифта.
       "font": {
         "name": "$FieldFont",           // Font name      / Название
         "size": 18,                     // Font size      / Размер
         "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
-        "bold": false,                  // True - bold    / Жирный.
+        "bold": true,                   // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
       // Параметры тени.
       "shadow": {
         "alpha": 100,                   // Opacity          / Прозрачность.
         "color": "0x000000",            //                    Цвет.
-        "angle": 45,                    // Offset angle     / Угол смещения.
+        "angle": 90,                    // Offset angle     / Угол смещения.
         "distance": 0,                  // Offset distance  / Дистанция смещения.
         "size": 6,                      //                    Размер.
         "strength": 200                 // Intensity        / Интенсивность.
       },
       // Rising speed of displayed damage (float up speed).
       // Время отображения отлетающего урона.
-      "speed": 2,
+      "speed": 5,
       // Maximum distance of target for which damage rises.
       // Расстояние, на которое отлетает урон.
-      "maxRange": 40,
+      "maxRange": 150,
       // Text for normal damage (see description of macros in the macros.txt).
       // Текст при обычном уроне (см. описание макросов в macros.txt).
       "damageMessage": "{{dmg}}",
       // Text for ammo rack explosion (see description of macros in the macros.txt).
       // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
-      "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
+      "blowupMessage": "ammoREKT!"
+    },
+	"damageTextFromPlayer": {
+      "visible": true,
+      "x": 0,
+      "y": -100,
+      "alpha": 100,
+      "color": "0xFFDD33",
+      "font": {
+        "name": "$FieldFont",           // Font name      / Название
+        "size": 18,                     // Font size      / Размер
+        "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
+        "bold": true,                   // True - bold    / Жирный.
+        "italic": false                 // True - italic  / Курсив.
+      },
+      "shadow": {
+        "alpha": 100,                   // Opacity          / Прозрачность.
+        "color": "0x000000",            //                    Цвет.
+        "angle": 90,                    // Offset angle     / Угол смещения.
+        "distance": 0,                  // Offset distance  / Дистанция смещения.
+        "size": 6,                      //                    Размер.
+        "strength": 200                 // Intensity        / Интенсивность.
+      },
+      "speed": 5,
+      "maxRange": 150,
+      "damageMessage": "{{dmg}}",
+      "blowupMessage": "ammoREKT!"
+    },
+	"damageTextFromSquad": {
+      "visible": true,
+      "x": 0,
+      "y": -100,
+      "alpha": 100,
+      "color": "0xFF0000",
+      "font": {
+        "name": "$FieldFont",           // Font name      / Название
+        "size": 18,                     // Font size      / Размер
+        "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
+        "bold": true,                   // True - bold    / Жирный.
+        "italic": false                 // True - italic  / Курсив.
+      },
+      "shadow": {
+        "alpha": 100,                   // Opacity          / Прозрачность.
+        "color": "0x000000",            //                    Цвет.
+        "angle": 90,                    // Offset angle     / Угол смещения.
+        "distance": 0,                  // Offset distance  / Дистанция смещения.
+        "size": 6,                      //                    Размер.
+        "strength": 200                 // Intensity        / Интенсивность.
+      },
+      "speed": 5,
+      "maxRange": 150,
+      "damageMessage": "{{dmg}}",
+      "blowupMessage": "ammoREKT!"
     }
   },
   // Настройки для союзников.
@@ -124,10 +176,10 @@
       "$ref": { "path":"def.damageText" }
     },
     "damageTextPlayer": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromPlayer" }
     },
     "damageTextSquadman": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromSquad" }
     },
     // Vehicle contour icon.
     // Контурная иконка танка.
@@ -233,10 +285,10 @@
       "$ref": { "path":"def.damageText" }
     },
     "damageTextPlayer": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromPlayer" }
     },
     "damageTextSquadman": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromSquad" }
     },
     // Vehicle contour icon.
     // Контурная иконка танка.

@@ -56,7 +56,7 @@
       "x": 0,
       "y": -100,
       "alpha": 100,
-      "color": "0xFFFF00",
+      "color": "0xFFDD33",
       "font": {
         "name": "$FieldFont",           // Font name      / Название
         "size": 18,                     // Font size      / Размер
