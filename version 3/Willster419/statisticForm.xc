@@ -3,6 +3,20 @@
  * Параметры окна статистики по клавише Tab.
  */
 {
+  "templates": {
+    // Clan icon definition.
+    // Шаблон иконки клана.
+    "clanIcon": {
+      "enabled": true,
+      "x": 65,
+	  "y": 6,
+	  "width": 16,
+	  "height": 16,
+	  "align": "center",
+	  "alpha": 90,
+      "src": "{{clanicon}}"
+    }
+  },
   "statisticForm": {
     // true - Enable display of battle tier.
     // true - включить отображение уровня боя.
@@ -37,12 +51,24 @@
     // X offset for enemies player names field
     // Cмещение по оси X поля ника противников
     "nameFieldOffsetXRight": 0,
+	// Width of allies player names field
+    // Ширина поля ника союзников
+    "nameFieldWidthLeft": 300,
+    // Width of enemies names field
+    // Ширина поля ника противников
+    "nameFieldWidthRight": 300,
     // X offset for "formatLeftVehicle" field
     // Cмещение по оси X поля названия танка союзников
     "vehicleFieldOffsetXLeft": 4,
     // X offset for "formatRightVehicle" field
     // Cмещение по оси X поля названия танка противников
     "vehicleFieldOffsetXRight": 4,
+	// Width of "formatLeftVehicle" field
+    // Ширина поля названия танка союзников
+    "vehicleFieldWidthLeft": 300,
+    // Width of "formatRightVehicle" field
+    // Ширина поля названия танка противников
+    "vehicleFieldWidthRight": 300,
     // X offset for allies vehicle icons
     // Смещение по оси X иконки танка союзников
     "vehicleIconOffsetXLeft": 16,
@@ -51,22 +77,16 @@
     "vehicleIconOffsetXRight": 12,
     // X offset for allies frags
     // Смещение по оси X фрагов союзников
-    "fragsOffsetXLeft": 12,
+    "fragsFieldOffsetXLeft": 5,
     // X offset for enemies frags
     // Смещение по оси X фрагов противников
-    "fragsOffsetXRight": 4,
-    // Display options for Team/Clan logos.
-    // Параметры отображения иконки игрока/клана.
-    "clanIcon": {
-      "show": true,
-      "x": 65,
-      "y": 6,
-      "xr": 65,
-      "yr": 6,
-      "w": 16,
-      "h": 16,
-      "alpha": 90
-    },
+    "fragsFieldOffsetXRight": 0,
+	// Width of frags field for allies
+    // Ширина поля фрагов союзников
+	"fragsFieldWidthLeft": 43,
+    // Width of frags field for enemies
+    // Ширина поля фрагов противников
+    "fragsFieldWidthRight": 43,
     // Display format for the left panel (macros allowed, see macros.txt).
     // Формат отображения для левой панели (допускаются макроподстановки, см. macros.txt).
     "formatLeftNick": "<img src='xvm://res/icons/flags/{{flag|default}}.png' width='16' height='13'> <img src='xvm://res/icons/xvm/xvm-user-{{xvm-user}}.png'> <font size='13'>{{name%.16s~..}}{{clan}}</font>",

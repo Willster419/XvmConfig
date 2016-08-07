@@ -9,7 +9,7 @@
     "spottedTime": 9,
     // Display time for minimap clicks (sec)
     // Время отображения кликов по миникарте (сек)
-    "minimapClicksTime": 5,
+    "minimapClicksTime": 2,
     // Color for minimap clicks (null for user colors)
     // Цвет для кликов по миникарте (null для пользовательских цветов)
     "minimapClicksColor": "{{c:xr}}"
