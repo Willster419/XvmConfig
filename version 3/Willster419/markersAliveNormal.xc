@@ -27,7 +27,7 @@
         // Цвет (допускается использование динамического цвета, см. macros.txt)
         "color": "0x0000FF",
         "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
-        "bold": false,                  // True - bold    / Жирный.
+        "bold": true,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
       // Параметры тени.
@@ -36,7 +36,7 @@
         // false - без тени
         "enabled": true,
         "distance": 0,                  // (in pixels)     / offset distance / дистанция смещения
-        "angle": 90,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "angle": 45,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
         "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
         "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
         "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
@@ -74,7 +74,7 @@
         // Цвет (допускается использование динамического цвета, см. macros.txt)
         "color": "0xFFDD33",
         "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
-        "bold": false,                  // True - bold    / Жирный.
+        "bold": true,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
       // Параметры тени.
@@ -83,7 +83,7 @@
         // false - без тени
         "enabled": true,
         "distance": 0,                  // (in pixels)     / offset distance / дистанция смещения
-        "angle": 90,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "angle": 45,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
         "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
         "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
         "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
@@ -121,7 +121,7 @@
         // Цвет (допускается использование динамического цвета, см. macros.txt)
         "color": "0xFF0000",
         "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
-        "bold": false,                  // True - bold    / Жирный.
+        "bold": true,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
       // Параметры тени.
@@ -130,7 +130,7 @@
         // false - без тени
         "enabled": true,
         "distance": 0,                  // (in pixels)     / offset distance / дистанция смещения
-        "angle": 90,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "angle": 45,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
         "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
         "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
         "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
