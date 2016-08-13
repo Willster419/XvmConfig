@@ -89,7 +89,7 @@
     "alpha": 100,
     // x position.
     // положение по горизонтали.
-    "x": 48,
+    "x": 60,
     // y position.
     // положение по вертикали.
     "y": 2,
@@ -107,11 +107,11 @@
     "shadow": {}
   },
 	"enemyHpLeft": {
-		"x": -25, 
+		"x": -43, 
 		"y": 8, 
 		"alpha": "{{a:spotted}}", 
 		"bindToIcon": true, 
-		"format": "<font face='Arial' size='10' color='#FFFFFF'><b>{{hp-ratio%d~%}}</b></font>",
+		"format": "<font face='Arial' size='10' color='#FFFFFF'><b>{{hp%4.4s|-----}}/{{hp-max%-4.4s|-----}}</b></font>",
 		"shadow": {}
 	},
 	"hpBg": {
@@ -161,7 +161,7 @@
   // Clan icon definition.
   // Шаблон иконки клана.
   "clanIcon": {
-    "enabled": true,
+    "enabled": false,
     "x": 40,
 	"y": 7,
 	"width": 16,
@@ -175,12 +175,12 @@
   // XMQP service marker definition.
   // Шаблон маркера сервиса XMQP.
   "xmqpServiceMarker": {
-    "x": 2, "y": 1, "align": "center", "bindToIcon": true, 
+    "x": 86, "y": 1, "align": "center", "bindToIcon": true, 
     "format": "<font face='xvm' size='23' color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}|&#x76;}}</font>",
     "shadow": {}
   },
   "xvmUserMarker": {
-    "enabled": true,
+    "enabled": false,
     "x": -8,
 	"y": 13,
 	"bindToIcon": true,
@@ -276,12 +276,12 @@
       "removeSquadIcon": false,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
-      "vehicleIconXOffsetLeft": 0,
-      "vehicleIconXOffsetRight": 0,
+      "vehicleIconXOffsetLeft": 20,
+      "vehicleIconXOffsetRight": 20,
       // Offset of X value for vehicle level.
       // Смещение координаты X для уровня танка.
-      "vehicleLevelXOffsetLeft": 0,
-      "vehicleLevelXOffsetRight": 0,
+      "vehicleLevelXOffsetLeft": 20,
+      "vehicleLevelXOffsetRight": 20,
       // transparency of vehicle level
       // прозрачность уровня танка
       "vehicleLevelAlpha": 100,
@@ -332,7 +332,8 @@
         ${"xvmUserMarker"},
         // XMQP service marker (see above).
         // Маркер сервиса XMQP (см. выше).
-        ${"xmqpServiceMarker"}
+        ${"xmqpServiceMarker"},
+		${"enemyHpLeft"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -363,12 +364,12 @@
       "removeSquadIcon": false,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
-      "vehicleIconXOffsetLeft": 0,
-      "vehicleIconXOffsetRight": 0,
+      "vehicleIconXOffsetLeft": 20,
+      "vehicleIconXOffsetRight": 20,
       // Offset of X value for vehicle level.
       // Смещение координаты X для уровня танка.
-      "vehicleLevelXOffsetLeft": 0,
-      "vehicleLevelXOffsetRight": 0,
+      "vehicleLevelXOffsetLeft": 20,
+      "vehicleLevelXOffsetRight": 20,
       // transparency of vehicle level
       // прозрачность уровня танка
       "vehicleLevelAlpha": 100,
@@ -419,7 +420,8 @@
         // Маркер сервиса XMQP (см. выше).
         ${"xmqpServiceMarker"},
 		${"hpBg"},
-		${"hpRatio"}
+		${"hpRatio"},
+		${"enemyHpLeft"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -452,12 +454,12 @@
       "removeSquadIcon": false,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
-      "vehicleIconXOffsetLeft": 0,
-      "vehicleIconXOffsetRight": 0,
+      "vehicleIconXOffsetLeft": 20,
+      "vehicleIconXOffsetRight": 20,
       // Offset of X value for vehicle level.
       // Смещение координаты X для уровня танка.
-      "vehicleLevelXOffsetLeft": 0,
-      "vehicleLevelXOffsetRight": 0,
+      "vehicleLevelXOffsetLeft": 20,
+      "vehicleLevelXOffsetRight": 20,
       // transparency of vehicle level
       // прозрачность уровня танка
       "vehicleLevelAlpha": 100,
@@ -508,7 +510,8 @@
         // Маркер сервиса XMQP (см. выше).
         ${"xmqpServiceMarker"},
 		${"hpBg"},
-		${"hpRatio"}
+		${"hpRatio"},
+		${"enemyHpLeft"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)
@@ -538,12 +541,12 @@
       "removeSquadIcon": false,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
-      "vehicleIconXOffsetLeft": 0,
-      "vehicleIconXOffsetRight": 0,
+      "vehicleIconXOffsetLeft": 20,
+      "vehicleIconXOffsetRight": 20,
       // Offset of X value for vehicle level.
       // Смещение координаты X для уровня танка.
-      "vehicleLevelXOffsetLeft": 0,
-      "vehicleLevelXOffsetRight": 0,
+      "vehicleLevelXOffsetLeft": 20,
+      "vehicleLevelXOffsetRight": 20,
       // transparency of vehicle level
       // прозрачность уровня танка
       "vehicleLevelAlpha": 100,
@@ -594,7 +597,8 @@
         // Маркер сервиса XMQP (см. выше).
         ${"xmqpServiceMarker"},
 		${"hpBg"},
-		${"hpRatio"}
+		${"hpRatio"},
+		${"enemyHpLeft"}
       ],
       // Set of formats for right panel (extended format supported, see above)
       // Набор форматов для правой панели (поддерживается расширенный формат, см. выше)

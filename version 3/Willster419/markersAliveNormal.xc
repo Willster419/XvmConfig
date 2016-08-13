@@ -244,11 +244,11 @@
       "y": -70,
       "alpha": 100,
       "textFormat": {
-        "font": "xvm",
+        "font": "$FieldFont",
         "size": 11,
       "color": "{{c:winrate}}",
-        "align": "right",
-        "bold": false,
+        "align": "center",
+        "bold": true,
         "italic": false
       },
       "shadow": {

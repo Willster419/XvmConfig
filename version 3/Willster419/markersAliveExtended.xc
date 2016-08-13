@@ -244,11 +244,11 @@
       "y": -70,
       "alpha": 100,
       "textFormat": {
-        "font": "xvm",
+        "font": "$FieldFont",
         "size": 11,
       "color": "{{c:t-winrate}}",
-        "align": "right",
-        "bold": false,
+        "align": "center",
+        "bold": true,
         "italic": false
       },
       "shadow": {
@@ -400,7 +400,7 @@
       // Axis field coordinates.
       // Положение поля по осям.
       "x": 6,
-      "y": -92,
+      "y": -105,
       // Opacity (dynamic transparency allowed, see macros.txt).
       // Прозрачность (допускается использование динамической прозрачности, см. macros.txt).
       "alpha": 100,
@@ -491,7 +491,7 @@
     "contourIcon": {
       "enabled": true,
       "x": 6,
-      "y": -92,
+      "y": -105,
       "alpha": 100,
       "color": null,
       "amount": 0

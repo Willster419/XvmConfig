@@ -171,7 +171,7 @@
     "hitlog": {
       "enabled": true,
       "updateEvent": "ON_DAMAGE_CAUSED",
-      "x": 300,
+      "x": 375,
       "y": 40,
       "width": 500,
       "height": 1000,
@@ -182,7 +182,7 @@
       "enabled": true,
       "updateEvent": "ON_PLAYERS_HP_CHANGED",
       "x": 0,
-      "y": 45,
+      "y": 48,
       "width": 200,
       "height": 40,
       "screenHAlign": "center",
