@@ -14,7 +14,7 @@
       // Axis field coordinates
       // Положение поля по осям
       "x": 0,
-      "y": -67,
+      "y": -100,
       // Opacity (dynamic transparency allowed, see macros.txt).
       // Прозрачность (допускается использование динамической прозрачности, см. macros.txt)
       "alpha": 100,
@@ -25,12 +25,11 @@
         "size": 18,                     // Font size      / Размер
         // Color (dynamic colors allowed, see macros.txt).
         // Цвет (допускается использование динамического цвета, см. macros.txt)
-        "color": null,
+        "color": "0x0000FF",
         "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
-        "bold": false,                  // True - bold    / Жирный.
+        "bold": true,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
-      // Shadow options.
       // Параметры тени.
       "shadow": {
         // false - no shadow
@@ -41,20 +40,114 @@
         "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
         "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
         "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
-        "strength": 1                   // (0.0 .. 255.0)  / intensity       / интенсивность
+        "strength": 1   
       },
-      // Rising speed of displayed damage (float up speed).
+	  // Rising speed of displayed damage (float up speed).
       // Время отображения отлетающего урона.
-      "speed": 2,
+      "speed": 5,
       // Maximum distance of target for which damage rises.
       // Расстояние, на которое отлетает урон.
-      "maxRange": 40,
+      "maxRange": 150,
       // Text for normal damage (see description of macros in the macros.txt).
       // Текст при обычном уроне (см. описание макросов в macros.txt).
       "damageMessage": "{{dmg}}",
       // Text for ammo rack explosion (see description of macros in the macros.txt).
       // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
-      "blowupMessage": "{{l10n:blownUp}}\n{{dmg}}"
+      "blowupMessage": "ammoREKT!"
+    },
+	  "damageTextFromPlayer": {
+      // false - disable / не отображать.
+      "enabled": true,
+      // Axis field coordinates
+      // Положение поля по осям
+      "x": 0,
+      "y": -100,
+      // Opacity (dynamic transparency allowed, see macros.txt).
+      // Прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "alpha": 100,
+      // Font options.
+      // Параметры шрифта.
+      "textFormat": {
+        "font": "$FieldFont",           // Font name      / Название
+        "size": 18,                     // Font size      / Размер
+        // Color (dynamic colors allowed, see macros.txt).
+        // Цвет (допускается использование динамического цвета, см. macros.txt)
+        "color": "0xFFDD33",
+        "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
+        "bold": true,                  // True - bold    / Жирный.
+        "italic": false                 // True - italic  / Курсив.
+      },
+      // Параметры тени.
+      "shadow": {
+        // false - no shadow
+        // false - без тени
+        "enabled": true,
+        "distance": 0,                  // (in pixels)     / offset distance / дистанция смещения
+        "angle": 45,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
+        "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
+        "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
+        "strength": 1   
+      },
+	  // Rising speed of displayed damage (float up speed).
+      // Время отображения отлетающего урона.
+      "speed": 5,
+      // Maximum distance of target for which damage rises.
+      // Расстояние, на которое отлетает урон.
+      "maxRange": 150,
+      // Text for normal damage (see description of macros in the macros.txt).
+      // Текст при обычном уроне (см. описание макросов в macros.txt).
+      "damageMessage": "{{dmg}}",
+      // Text for ammo rack explosion (see description of macros in the macros.txt).
+      // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
+      "blowupMessage": "ammoREKT!"
+    },
+	  "damageTextFromSquad": {
+      // false - disable / не отображать.
+      "enabled": true,
+      // Axis field coordinates
+      // Положение поля по осям
+      "x": 0,
+      "y": -100,
+      // Opacity (dynamic transparency allowed, see macros.txt).
+      // Прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "alpha": 100,
+      // Font options.
+      // Параметры шрифта.
+      "textFormat": {
+        "font": "$FieldFont",           // Font name      / Название
+        "size": 18,                     // Font size      / Размер
+        // Color (dynamic colors allowed, see macros.txt).
+        // Цвет (допускается использование динамического цвета, см. macros.txt)
+        "color": "0xFF0000",
+        "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
+        "bold": true,                  // True - bold    / Жирный.
+        "italic": false                 // True - italic  / Курсив.
+      },
+      // Параметры тени.
+      "shadow": {
+        // false - no shadow
+        // false - без тени
+        "enabled": true,
+        "distance": 0,                  // (in pixels)     / offset distance / дистанция смещения
+        "angle": 45,                    // (0.0 .. 360.0)  / offset angle    / угол смещения
+        "color": "0x000000",            // "0xXXXXXX"      / color           / цвет
+        "alpha": 100,                   // (0 .. 100)      / opacity         / прозрачность
+        "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
+        "strength": 1   
+      },
+      // Rising speed of displayed damage (float up speed).
+      // Время отображения отлетающего урона.
+      "speed": 5,
+      // Maximum distance of target for which damage rises.
+      // Расстояние, на которое отлетает урон.
+      "maxRange": 150,
+      // Text for normal damage (see description of macros in the macros.txt).
+      // Текст при обычном уроне (см. описание макросов в macros.txt).
+      "damageMessage": "{{dmg}}",
+      // Text for ammo rack explosion (see description of macros in the macros.txt).
+      // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
+      "blowupMessage": "ammoREKT!"
     }
   },
   // Настройки для союзников.
@@ -117,10 +210,10 @@
       "$ref": { "path":"def.damageText" }
     },
     "damageTextPlayer": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromPlayer" }
     },
     "damageTextSquadman": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromSquad" }
     },
     // Vehicle contour icon.
     // Контурная иконка танка.
@@ -205,10 +298,10 @@
       "$ref": { "path":"def.damageText" }
     },
     "damageTextPlayer": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromPlayer" }
     },
     "damageTextSquadman": {
-      "$ref": { "path":"def.damageText" }
+      "$ref": { "path":"def.damageTextFromSquad" }
     },
     // Vehicle contour icon.
     // Контурная иконка танка.
