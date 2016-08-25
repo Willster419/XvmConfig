@@ -449,7 +449,7 @@
       "alpha": 100,
       "maxScale": 100,
       "offsetX": 0,
-      "offsetY": 16
+      "offsetY": 0
     },
     // Индикатор здоровья.
     "healthBar": {
