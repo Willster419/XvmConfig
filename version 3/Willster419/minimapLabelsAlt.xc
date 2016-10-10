@@ -9,16 +9,18 @@
     // Format set
     // Набор форматов
     "formats": [
-      //${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
-      ${ "minimapLabelsTemplates.xc":"def.vehicleSpottedCompany" },
-      ${ "minimapLabelsTemplates.xc":"def.nickSpottedCompany" },
-      ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" },
+      ${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedAlly" },
+      //${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedEnemy" },
+      //${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedSquadman" },
+      //${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedTeamKiller" },
+      ${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
+      ${ "minimapLabelsTemplates.xc":"def.hpLost" },
+      ${ "minimapLabelsTemplates.xc":"def.nickSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeLost" },
       ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
       ${ "minimapLabelsTemplates.xc":"def.nickLost" },
-      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" },
-      ${ "minimapLabelsTemplates.xc":"def.vehicleDead" },
-      ${ "minimapLabelsTemplates.xc":"def.nickDead" }
-    ]
+	  ${ "minimapLabelsTemplates.xc":"def.hpSpotted" },
+      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" }
+      ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" }    ]
   }
 }
