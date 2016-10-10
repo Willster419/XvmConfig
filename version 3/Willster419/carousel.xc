@@ -6,7 +6,7 @@
   "carousel": {
     // false - Disable customizable carousel.
     // false - Отключить настраиваемую карусель.
-    "enabled": true,
+    "enabled": false,
     // Scale of carousel cells.
     // Масштаб ячеек карусели.
     "zoom": 1,
@@ -33,7 +33,7 @@
     "hideBuySlot": false,
     // true - show total slots count in the "Buy vehicle" cell.
     // true - показывать общее количество слотов в ячейке "Купить машину".
-    "showTotalSlots": false,
+    "showTotalSlots": true,
     // true - show used slots count in the "Buy slot" cell.
     // true - показывать количество занятых слотов в ячейке "Купить слот".
     "showUsedSlots": true,

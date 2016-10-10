@@ -169,7 +169,7 @@
      └────────────────────────────┴──────────────────────────────────────────────────────────────────────────
     */
     "hitlog": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "ON_DAMAGE_CAUSED",
       "x": 375,
       "y": 40,
@@ -202,7 +202,7 @@
       "format": "{{xvm-stat?{{l10n:Chance to win}}: {{chancesStatic}}{{chancesStatic? / |}}{{chancesLive}}}}"
     },
     "test": {
-      "enabled": true,
+      "enabled": false,
       "y": -170,
       "width": 200,
       "height": 70,
@@ -214,7 +214,7 @@
       "format": "This is a demo of XVM text fields on battle interface. You may disable it in battle.xc<br/> Press '<font color='#60FF00'>J</font>' hot-key to show info field"
     },
     "test2": {
-      "enabled": true,
+      "enabled": false,
       "hotKeyCode": 36,
       "y": -70,
       "width": 310,
