@@ -20,7 +20,7 @@
       ${ "minimapLabelsTemplates.xc":"def.vehicleLost" },
       ${ "minimapLabelsTemplates.xc":"def.nickLost" },
 	  ${ "minimapLabelsTemplates.xc":"def.hpSpotted" },
-      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" }
+      ${ "minimapLabelsTemplates.xc":"def.vtypeDead" },
       ${ "minimapLabelsTemplates.xc":"def.xmqpEvent" }    ]
   }
 }
