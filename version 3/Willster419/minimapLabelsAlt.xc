@@ -10,9 +10,9 @@
     // Набор форматов
     "formats": [
       ${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedAlly" },
-      //${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedEnemy" },
-      //${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedSquadman" },
-      //${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedTeamKiller" },
+      ${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedEnemy" },
+      ${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedSquadman" },
+      ${ "minimapLabelsTemplates.xc":"def.HealthPointsSpottedTeamKiller" },
       ${ "minimapLabelsTemplates.xc":"def.vtypeSpotted" },
       ${ "minimapLabelsTemplates.xc":"def.hpLost" },
       ${ "minimapLabelsTemplates.xc":"def.nickSpotted" },
