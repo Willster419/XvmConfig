@@ -1,0 +1,12 @@
+[Header]
+File01=u,"[app]\res_mods\configs\xvm\py_macro\xvm\total_hp.py"
+
+[Search]
+; File01_01=j//battleLabels.formats.totalHP.enabled
+File01_01="return "<font color='#%s'>&nbsp;%6s %s %-6s&nbsp;</font>" % (color(), ally(), sign(), enemy())"
+; File01_01=j//battleLabelsTemplates.totalHP.enabled
+
+[Replace]
+;File01_01=false
+;File01_01=${"battleLabelsTemplates.xc":"def"}
+File01_01="panel.teams_totalhp[0]-panel.teams_totalhp[1]"

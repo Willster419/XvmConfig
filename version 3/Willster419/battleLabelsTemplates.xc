@@ -182,13 +182,13 @@
       "enabled": true,
       "updateEvent": "ON_PLAYERS_HP_CHANGED",
       "x": 0,
-      "y": 48,
-      "width": 200,
+      "y": 30,
+      "width": 300,
       "height": 40,
       "screenHAlign": "center",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 1.5 },
       "textFormat": { "font": "mono", "size": 18, "align": "center" },
-      "format": "{{py:xvm.total_hp.text()}}"
+      "format": "<font color='#00FF00'>{{py:xvm.total_hp.ally()}}</font>   |   <font color='#{{py:xvm.total_hp.color()}}'>{{py:xvm.total_hp.text()}}</font>   |   <font color='#FF0000'>{{py:xvm.total_hp.enemy()}}</font>"
     },
     "winChance": {
       "enabled": false,
