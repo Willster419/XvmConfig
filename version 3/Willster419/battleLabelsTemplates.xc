@@ -179,7 +179,7 @@
       "format": "{{hitlog-header}}\n{{hitlog-body}}"
     },
     "totalHP": {
-      "enabled": false,
+      "enabled": true,
       "updateEvent": "ON_PLAYERS_HP_CHANGED",
       "x": 0,
       "y": 48,

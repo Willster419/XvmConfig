@@ -44,7 +44,7 @@
       "y": 2,
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "textFormat": { "size": 7 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{vehicle%.7s~..}}</i></font>"
+      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle%.7s~..}}</font>"
     },
     // Vehicle name, visible, company config
     // Название техники, видимый, ротный конфиг
@@ -126,10 +126,11 @@
 	"hpLost": {
       "$ref": { "path":"def.defaultItem" },
       "x": 1,
-      "y": 8,
+      "y": 2,
+	  "alpha": 85,
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
       "textFormat": { "size": 7 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp}}</font>"
+      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{hp}}</i></font>"
     },
     // Vehicle type, dead
     // Тип техники, мертвый
