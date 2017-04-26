@@ -31,6 +31,9 @@
     // true - Return crew check box is selected by default
     // true - Включить галочку возврата экипажа по умолчанию
     "crewReturnByDefault": false,
+    // Number of perks to show without grouping
+    // Количество перков, которые отображаются без группировки
+    "crewMaxPerksCount": 8,
     // true - Show flags in barracks
     // true - Показывать флаги в казарме
     "barracksShowFlags": true,
@@ -46,9 +49,6 @@
     // Below this percentage, ammo is low. (0 - 100)
     // Ниже этого процента, снарядов считается мало. (0 - 100)
     "lowAmmoPercentage": 20,
-    // true - Enable widgets
-    // true - включить виджеты
-    "widgetsEnabled": false,
     // Ping servers
     // Пинг серверов
     "pingServers": {
@@ -71,6 +71,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to response time text delimiter
       // Разделитель сервера от времени отклика
       "delimiter": ": ",
@@ -149,7 +153,6 @@
         // false - no shadow
         // false - без тени
         "enabled": true,
-
         "distance": 0,             // (in pixels)     / offset distance / дистанция смещения
         "angle": 0,                // (0.0 .. 360.0)  / offset angle    / угол смещения
         "color": "0x000000",       // "0xXXXXXX"      / color           / цвет
@@ -175,6 +178,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to online text delimiter
       // Разделитель сервера от онлайна
       "delimiter": ": ",
@@ -245,7 +252,6 @@
       // Параметры тени
       "shadow": {
         "enabled": true,
-
         "distance": 0,
         "angle": 0,
         "color": "0x000000",
@@ -265,7 +271,8 @@
       "alpha": 100,
       // Rotation in degrees [0..360].
       // Угол поворота в градусах [0..360].
-      "rotation": 0,// Shift X position
+      "rotation": 0,
+      // Shift X position
       // Сдвиг по оси X
       "shiftX": 0,
       // Shift Y position
@@ -347,8 +354,8 @@
     // Parameters for tank carousel
     // Параметры карусели танков
     "carousel": ${"carousel.xc":"carousel"},
-    // Parameters for hangar clock
-    // Параметры часов в ангаре
-    "clock": ${"clock.xc":"clock"}
+    // Parameters for widgets
+    // Параметры виджетов
+    "widgets": ${"widgets.xc":"widgets.lobby"}
   }
 }

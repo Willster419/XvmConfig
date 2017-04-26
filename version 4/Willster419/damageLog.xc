@@ -27,14 +27,15 @@
     {{dmg-ratio}}         - received damage in percent / полученный урон в процентах.
     {{team-dmg}}          - source of damage (ally , enemy, self damage) / источник урона (союзник, противник, урон по себе).
     {{splash-hit}}        - text when hit by splash damage from shell (HE/HESH) / текст при попадании осколков снаряда (ОФ/ХФ).
-    {{my-alive}}          - value 'alive' if my vehicle is alive, '' for dead / возвращает 'alive', если я живой, '', если не живой
+    {{my-alive}}          - value 'al' if my vehicle is alive, '' for dead / возвращает 'al', если я живой, '', если не живой
     {{reloadGun}}         - reloading time of a gun / время перезарядки орудия 
     {{gun-caliber}}       - caliber of a gun / калибр орудия
-    {{wn8}}, {{xwn8}}, {{eff}}, {{xeff}}, {{wgr}}, {{xwgr}}, {{xte}}                - statistics macros (see macros.txt) / макросы статистика (смотрите macros_ru.txt)
-    {{c:wn8}}, {{c:xwn8}}, {{c:eff}}, {{c:xeff}}, {{c:wgr}}, {{c:xwgr}}, {{c:xte}}  - statistics macros (see macros.txt) / макросы статистика (смотрите macros_ru.txt)
+    {{wn8}}, {{xwn8}}, {{wn6}}, {{xwn6}}, {{eff}}, {{xeff}}, {{wgr}}, {{xwgr}}, {{xte}}, {{r}}                      - statistics macros (see macros.txt) / макросы статистика (смотрите macros_ru.txt)
+    {{c:wn8}}, {{c:xwn8}}, {{c:wn6}}, {{c:xwn6}}, {{c:eff}}, {{c:xeff}}, {{c:wgr}}, {{c:xwgr}}, {{c:xte}}, {{c:r}}  - statistics macros (see macros.txt) / макросы статистика (смотрите macros_ru.txt)
     {{fire-duration}}     - duration of fire ("groupDamagesFromFire" must be enabled to work) / продолжительность пожара (работает только при включенной опции "groupDamagesFromFire")
     {{diff-masses}}       - vehicles weights difference during collision / разность масс техники при столкновении
     {{nation}}            - vehicle nation / нация техники
+    {{my-blownup}}        - value 'blownup' if own vehicle's ammunition have been blown up, '' otherwise  / возвращает 'blownup', если взорван боекомплект техники игрока, иначе пусто
 */
 
 {
@@ -52,7 +53,7 @@
       //true - разрешено перемещать в бою лог полученного урона, макросы в "x" и "y" не работают
       //false - запрещено перемещать в бою лог полученного урона, макросы в "x" и "y" работают
       "moveInBattle": false,
-      "x": 200,
+      "x": 240,
       "y": -23,
       // Kind of the received damage (macro {{dmg-kind}}).
       // Вид полученного урона (макрос {{dmg-kind}}).
@@ -257,14 +258,14 @@
       //true - разрешено перемещать поле последнего урона в бою, макросы в "x" и "y" не работают
       //false - запрещено перемещать поле последнего урона в бою, макросы в "x" и "y" работают
       "moveInBattle": false,
-      "x": 0,
+      "x": -120,
       "y": 200,
       // true - show hits without damage, false - not to show.
       // true - отображать попадания без урона, false - не отображать.
       "showHitNoDamage": true,
       // Display duration (seconds).
       // Продолжительность отображения (секунды).
-      "timeDisplayLastHit": 5,
+      "timeDisplayLastHit": 7,
       //TO DO
       //Настройка тени
       "shadow": { 

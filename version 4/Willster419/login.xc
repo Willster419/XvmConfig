@@ -35,6 +35,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to response time text delimiter
       // Разделитель сервера от времени отклика
       "delimiter": ": ",
@@ -104,7 +108,6 @@
         // false - no shadow
         // false - без тени
         "enabled": true,
-
         "distance": 0,             // (in pixels)     / offset distance / дистанция смещения
         "angle": 0,                // (0.0 .. 360.0)  / offset angle    / угол смещения
         "color": "0x000000",       // "0xXXXXXX"      / color           / цвет
@@ -130,6 +133,10 @@
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
+      // If set, draw image at background.
+      // Фоновое изображение, если задано.
+      // example: "bgImage": "cfg://My/img/my.png",
+      "bgImage": null,
       // Server to online text delimiter
       // Разделитель сервера от онлайна
       "delimiter": ": ",
@@ -191,7 +198,6 @@
       // Параметры тени
       "shadow": {
         "enabled": true,
-
         "distance": 0,
         "angle": 0,
         "color": "0x000000",
@@ -199,6 +205,9 @@
         "blur": 4,
         "strength": 2
       }
-    }
+    },
+    // Parameters for widgets
+    // Параметры виджетов
+    "widgets": ${"widgets.xc":"widgets.login"}
   }
 }

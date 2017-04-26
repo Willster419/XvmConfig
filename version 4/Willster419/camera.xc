@@ -61,10 +61,8 @@
       // Начальное значение кратности (null для поведения по умолчанию - последнее использовавшееся значение)
       "startZoom": null,
       // Zoom Indicator (see extra-field.txt for parameters description)
-
       // Global macros allowed in all fields
       // Индикатор масштаба (см. extra-field.txt для описания параметров)
-
       // Можно использовать глобальные макросы во всех полях
       "zoomIndicator": {
         // false - disable.
@@ -84,12 +82,6 @@
         "rotation": 0,
         "scaleX": 1,
         "scaleY": 1,
-
-
-
-
-
-
         // Background color
         // Цвет фона
         "bgColor": null,
@@ -97,9 +89,6 @@
         // Цвет рамки
         "borderColor": null,
         "antiAliasType": "advanced",
-
-
-
         "textFormat": {
           "font": "$TitleFont",
           "size": 16,
@@ -109,7 +98,6 @@
         },
         // Text format
         // Формат текста
-
         "format": "x{{zoom}}",
         // Shadow options
         // Параметры тени

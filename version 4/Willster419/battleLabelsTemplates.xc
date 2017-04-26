@@ -24,7 +24,7 @@
       "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
       "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:math.sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?85|60}}",
+      "y": "{{pp.mode=0?95|65}}",
       "width": 500,
       "height": 1000,
       "textFormat": { "color": "0xF4EFE8", "size": 15 },
@@ -163,19 +163,18 @@
     },
     "totalEfficiency": {
       "enabled": true,
-      "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
-      "x": 240,
-      "y": -2,
-      "width": 300,
+      "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
+      "x": "240",
+      "y": "-2",
+      "width": "{{py:xvm.isStuns?350|260}}",
       "height": 22,
       "screenVAlign": "bottom",
-      "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 3 },
-      "textFormat": { "color": "0xE3E3E3", "size": 16 },
-      "format": "<textformat tabstops='[65,130,196]' leading='-2' ><img src='xvm://res/icons/Efficiency/damage.png'> {{py:xvm.totalDamage}}<tab><img src='xvm://res/icons/Efficiency/assist.png'> {{py:xvm.totalAssist}}<tab><img src='xvm://res/icons/Efficiency/reflect.png'> {{py:xvm.totalBlocked}}<tab><img src='xvm://res/icons/Efficiency/discover.png'> {{py:xvm.detection}}</textformat>"
+      "textFormat": { "size": 16 },
+      "format": "<textformat tabstops='[65,130,196,261]' leading='-2' ><img src='xvm://res/icons/Efficiency/damage.png' vspace='-2'> <font color='{{py:xvm.totalDamage>0?{{py:xvm.totalDamageColor}}}}'>{{py:xvm.totalDamage}}</font><tab><img src='xvm://res/icons/Efficiency/assist.png' vspace='-2'> {{py:xvm.totalAssist}}<tab><img src='xvm://res/icons/Efficiency/reflect.png' vspace='-2'> {{py:xvm.totalBlocked}}<tab><img src='xvm://res/icons/Efficiency/discover.png' vspace='-2'> {{py:xvm.detection}}<tab><img src='xvm://res/icons/Efficiency/stun.png' vspace='-2'> {{py:xvm.totalStun}}</textformat>"
     },
     // Rewritable timer format
     // Перезаписываемый формат таймера
-    "defaultTimeItem": {
+    "repairTimeItem": {
       "width": 47,
       "height": 40,
       "screenHAlign": "left",
@@ -186,7 +185,7 @@
     // Repair timer for engine
     // Таймер ремонта двигателя
     "repairTimeEngine": {
-      "$ref": { "path":"def.defaultTimeItem" },
+      "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_ENGINE_UPDATE)",
       "x": 4,
@@ -196,7 +195,7 @@
     // Repair timer for gun
     // Таймер ремонта орудия
     "repairTimeGun": {
-      "$ref": { "path":"def.defaultTimeItem" },
+      "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_GUN_UPDATE)",
       "x": 4,
@@ -206,7 +205,7 @@
     // Repair timer for turret rotator
     // Таймер ремонта механизма поворота башни
     "repairTimeTurret": {
-      "$ref": { "path":"def.defaultTimeItem" },
+      "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_TURRET_UPDATE)",
       "x": 4,
@@ -216,7 +215,7 @@
     // Repair timer for tracks
     // Таймер ремонта сбитых гусениц
     "repairTimeTracks": {
-      "$ref": { "path":"def.defaultTimeItem" },
+      "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_TRACKS_UPDATE)",
       "x": 177,
@@ -226,7 +225,7 @@
     // Repair timer for surveying device
     // Таймер ремонта приборов наблюдения
     "repairTimeSurveying": {
-      "$ref": { "path":"def.defaultTimeItem" },
+      "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_SURVEYING_UPDATE)",
       "x": 177,
@@ -236,7 +235,7 @@
     // Repair timer for radio
     // Таймер ремонта радиостанции
     "repairTimeRadio": {
-      "$ref": { "path":"def.defaultTimeItem" },
+      "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_RADIO_UPDATE)",
       "x": 177,
