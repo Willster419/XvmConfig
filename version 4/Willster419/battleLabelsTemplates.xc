@@ -162,7 +162,7 @@
       "format": "ПОЖАР"
     },
     "totalEfficiency": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
       "x": "240",
       "y": "-2",
