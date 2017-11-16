@@ -29,6 +29,7 @@
     // Тип техники, видимый
     "vtypeSpotted": {
       "$ref": { "path":"def.defaultItem" },
+      "enabled": false,
       "align": "center",
       "valign": "center",
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
@@ -61,14 +62,6 @@
       "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
       "textFormat": { "size": 7 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{name%.7s~..}}</font>"
-    },
-	"hpSpotted": {
-      "$ref": { "path":"def.defaultItem" },
-      "x": 4,
-      "y": 2,
-      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
-      "textFormat": { "size": 7 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp}}</font>"
     },
     // Player nickname, visible, company config
     // Ник игрока, видимый, ротный конфиг
@@ -123,15 +116,6 @@
       "textFormat": { "size": 7 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>"
     },
-	"hpLost": {
-      "$ref": { "path":"def.defaultItem" },
-      "x": 1,
-      "y": 2,
-	  "alpha": 85,
-      "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
-      "textFormat": { "size": 7 },
-      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{hp}}</i></font>"
-    },
     // Vehicle type, dead
     // Тип техники, мертвый
     "vtypeDead": {
@@ -169,33 +153,50 @@
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{name%.7s~..}}</i></font>",
       "shadow": { "$ref": { "path":"def.defaultItem.shadow" }, "strength": 3 }
     },
-	"HealthPointsSpottedAlly": {
+    "hpLost": {
+      "$ref": { "path":"def.defaultItem" },
+      "x": 1,
+      "y": 2,
+    "alpha": 85,
+      "flags": [ "ally", "enemy", "squadman", "teamKiller", "lost", "alive" ],
+      "textFormat": { "size": 7 },
+      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'><i>{{hp}}</i></font>"
+    },
+    "hpSpotted": {
+      "$ref": { "path":"def.defaultItem" },
+      "x": 4,
+      "y": 2,
+      "flags": [ "ally", "enemy", "squadman", "teamKiller", "spotted", "alive" ],
+      "textFormat": { "size": 7 },
+      "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp}}</font>"
+    },
+  "HealthPointsSpottedAlly": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "ally", "spotted", "alive" ],      
-      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.436a}}</font>",
-	  "x": -8,
-	  "y": -10
+      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
+      "x": -8,
+      "y": -10
     },
     "HealthPointsSpottedEnemy": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "enemy", "spotted", "alive" ],
-      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.436a|&#xE6;}}</font>",
+      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
       "x": -8,
-	  "y": -10
+      "y": -10
     },
     "HealthPointsSpottedSquadman": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "squadman", "spotted", "alive" ],
-      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.436a}}</font>",
+      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
       "x": -8,
-	  "y": -10
+      "y": -10
     },
     "HealthPointsSpottedTeamKiller": {
       "$ref": { "path":"def.defaultItem" },
       "flags": [ "teamKiller", "spotted", "alive" ],
-      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.436a}}</font>",
+      "format": "<font face='dynamic' size='{{vtype-key=HT?19|17}}' color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{hp-ratio%.335a|&#x1B3;}}</font>",
       "x": -8,
-	  "y": -10
+      "y": -10
     }
   }
 }

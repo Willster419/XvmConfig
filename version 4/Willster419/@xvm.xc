@@ -21,8 +21,8 @@
   // Версия конфига. Не удаляйте и не изменяйте её без необходимости.
   "configVersion": "6.1.0",
 
-  // automatically reload config. Can reduce performance.
-  // автоматически перезагружать конфиг. Может понизить производительность.
+  // Automatically reload config. Requires client restart.
+  // Автоматически перезагружать конфиг. Требует перезапуска клиента.
   "autoReloadConfig": false,
 
   // Language used in mod
@@ -54,19 +54,19 @@
 
     // Address to config updates.
     // Адрес, где выкладываются обновления конфига.
-    "url": "http://www.modxvm.com/",
+    "url": "https://github.com/Willster419/xvmConfig",
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "24.04.2017",
+    "date": "15.11.2017",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.18",
+    "gameVersion": "0.9.20.1.3",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "6.6.0"
+    "modMinVersion": "7.2.1"
   },
 
   // Parameters for login screen.
@@ -100,7 +100,7 @@
   // Log of the received hits.
   // Лог полученных попаданий.
   "damageLog": ${"damageLog.xc":"damageLog"},
-  
+
   // Special XVM hotkeys.
   // Специальные горячие клавиши XVM.
   "hotkeys": ${"hotkeys.xc":"hotkeys"},

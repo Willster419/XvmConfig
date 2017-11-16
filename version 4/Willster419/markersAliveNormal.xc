@@ -302,11 +302,11 @@
       "x": 0,                         //  положение по оси X
       "y": -51,                       //  положение по оси Y
       "alpha": 100,                   //  прозрачность (допускается использование динамической прозрачности, см. macros.txt)
+      "align": "center",            //  выравнивание текста (left, center, right)
       "textFormat": {                 //  параметры шрифта
         "font": "$FieldFont",         //  название
         "size": 13,                   //  размер
         "color": "0xEDEDED",          //  цвет (допускается использование динамического цвета, см. macros.txt)
-        "align": "center",            //  выравнивание текста (left, center, right)
         "bold": false,                //  обычный (false) или жирный (true)
         "italic": false               //  обычный (false) или курсив (true)
       },
@@ -341,9 +341,6 @@
       // Opacity.
       // Прозрачность.
       "alpha": 100,
-      // Color (currently not in use).
-      // Цвет (в данный момент не используется).
-      "color": null,
       // Maximum scale (default is 100).
       // Максимальный масштаб (по умолчанию 100).
       "maxScale": 100,

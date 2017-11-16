@@ -14,16 +14,17 @@
       "height": 16,
       "align": "center",
       "alpha": 90,
+      "bindToIcon": true,
       "src": "{{clanicon}}"
     }
   },
   "statisticForm": {
-    // true - Enable display of battle tier.
-    // true - включить отображение уровня боя.
-    "showBattleTier": false,
-    // true - Disable Platoon icons.
-    // true - убрать отображение иконки взвода.
+    // true - Disable Platoon/rank icons.
+    // true - убрать отображение иконки взвода/ранга.
     "removeSquadIcon": false,
+    // true - disable rank badge icons
+    // true - убрать отображение иконки бейджа ранга
+    "removeRankBadgeIcon": false,
     // Opacity percentage of vehicle icon. 0 - transparent ... 100 - opaque.
     // Прозрачность в процентах иконки танка. 0 - прозрачные, 100 - не прозрачные.
     "vehicleIconAlpha": 100,
@@ -48,7 +49,7 @@
     // X offset for allies squad icons
     // Cмещение по оси X значка взвода союзников
     "squadIconOffsetXLeft": 0,
-    // X offset for enemies squad icons field
+    // X offset for enemies squad icons
     // Cмещение по оси X значка взвода противников
     "squadIconOffsetXRight": 0,
     // X offset for allies player names field
@@ -57,7 +58,7 @@
     // X offset for enemies player names field
     // Cмещение по оси X поля ника противников
     "nameFieldOffsetXRight": 0,
-	// Width of allies player names field
+    // Width of allies player names field
     // Ширина поля ника союзников
     "nameFieldWidthLeft": 300,
     // Width of enemies names field
@@ -69,7 +70,7 @@
     // X offset for "formatRightVehicle" field
     // Cмещение по оси X поля названия танка противников
     "vehicleFieldOffsetXRight": 4,
-	// Width of "formatLeftVehicle" field
+    // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
     "vehicleFieldWidthLeft": 300,
     // Width of "formatRightVehicle" field
@@ -87,9 +88,9 @@
     // X offset for enemies frags
     // Смещение по оси X фрагов противников
     "fragsFieldOffsetXRight": 0,
-	// Width of frags field for allies
+    // Width of frags field for allies
     // Ширина поля фрагов союзников
-	"fragsFieldWidthLeft": 43,
+    "fragsFieldWidthLeft": 43,
     // Width of frags field for enemies
     // Ширина поля фрагов противников
     "fragsFieldWidthRight": 43,

@@ -51,30 +51,22 @@
     // Text for {{battletype}} macro.
     // Текст для макроса {{battletype}}.
     "battletype": {
-      // Неизвестный бой.
+      // Неизвестный бой
       "unknown": "",
-      // Случайный бой.
+      // Случайный бой
       "regular": "",
-      // Тренировочный бой.
+      // Тренировочный бой
       "training": "training",
-      // Ротный бой.
-      "company": "company",
-      // Турнир.
+      // Турнир
       "tournament": "tournament",
-      // Клановый бой.
+      // Клановый бой
       "clan": "clan",
-      // Учебный бой.
+      // Учебный бой
       "tutorial": "",
-      // Командный бой.
+      // Командный бой
       "cybersport": "cybersport",
-      // Бой спецрежима (гонки, футбол и т.п.).
+      // Бой спецрежима (гонки, футбол и т.п.)
       "event_battles": "",
-      // Вылазка.
-      "sortie": "sortie",
-      // Бой за укрепрайон.
-      "fort_battle": "fort_battle",
-      // Командный бой: ладдер.
-      "rated_cybersport": "rated_cybersport",
       // Глобальная карта (ГК)
       "global_map": "global_map",
       // Регулярный турнир (ивент) ГК
@@ -85,14 +77,24 @@
       "rated_sandbox": "",
       // Песочный PVE, >10 боев
       "sandbox": "",
-      // Бой до последнего
+      // Стальная охота
       "fallout_classic": "",
-      // ?
+      // Превосходство
       "fallout_multiteam": "",
-      // Укрепрайон, вылазка (новый)
+      // Укрепрайон, вылазка
       "sortie_2": "sortie_2",
-      // Битва за укрепрайон (новый)
-      "fort_battle_2": "fort_battle_2"
+      // Укрепрайон, наступление
+      "fort_battle_2": "fort_battle_2",
+      // Ранговый бой
+      "ranked": "",
+      // Учебный полигон
+      "bootcamp": "",
+      // Генеральное сражение
+      "epic_random": "",
+      // Генеральное сражение (тренировка)
+      "epic_random_training": "epic_random_training",
+      // Бой спецрежима (новый)(гонки, футбол и т.п.)
+      "event_battles_2": ""
     },
     // Text for {{topclan}} macro.
     // Текст для макроса {{topclan}}

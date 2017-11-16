@@ -9,6 +9,8 @@
     // Enemy spotted status marker.
     // Маркер статуса засвета противника.
     "enemySpottedMarker": {
+      // false - отключить.
+      "enabled": true,
       // Opacity percentage of spotted markers in the panels. 0 - transparent (disabled) ... 100 - opaque.
       // Прозрачность в процентах маркеров засвета в ушах. 0 - полностью прозрачные (отключены), 100 - не прозрачные.
       "alpha": 100,
@@ -86,11 +88,16 @@
     // XMQP service marker definition.
     // Шаблон маркера сервиса XMQP.
     "xmqpServiceMarker": {
-      "x": 50,
-      "y": 1,
-      "align": "center",
-      "bindToIcon": true, 
-      "format": "<font face='xvm' size='23' color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}|&#x76;}}</font>",
+      "enabled": true,
+      "x": 88,
+      "y": -2,
+      "align": "center", 
+      "bindToIcon": true,
+      "textFormat": {
+        "font": "xvm",
+        "size": 24
+      },
+      "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
       "shadow": {}
     },
     "xvmUserMarker": {
@@ -205,9 +212,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -244,6 +251,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -307,9 +321,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "nick" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -346,6 +360,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -411,9 +432,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "vehicle" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
@@ -450,6 +471,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -515,9 +543,9 @@
       // false - disable (отключить)
       "enabled": true,
       // Displayed standard fields in this mode and their order.
-      // Available names: "frags", "vehicle", "nick".
+      // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
-      // Допустимые названия: "frags", "vehicle", "nick".
+      // Допустимые названия: "frags", "badge", "nick", "vehicle".
       "standardFields": [ "frags", "nick", "vehicle" ],
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
@@ -551,6 +579,13 @@
       // Тень для поля фрагов (по умолчанию null = без тени, как в чистом клиенте).
       "fragsShadowLeft": null,
       "fragsShadowRight": null,
+      // Offset of X value for rank badge column.
+      // Смещение координаты X для поля бейджа ранга.
+      "rankBadgeXOffsetLeft": 0,
+      "rankBadgeXOffsetRight": 0,
+      // Width of the rank badge column. Default is 24.
+      // Ширина поля бейджа ранга. По умолчанию: 24.
+      "rankBadgeWidth": 24,
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,

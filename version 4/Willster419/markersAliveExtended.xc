@@ -1,6 +1,6 @@
 ﻿/**
- * Options for alive without Alt markers.
- * Настройки маркеров для живых без Alt.
+ * Options for alive with Alt markers.
+ * Настройки маркеров для живых с Alt.
  */
 {
   // Definitions
@@ -18,6 +18,7 @@
       // Opacity (dynamic transparency allowed, see macros.txt).
       // Прозрачность (допускается использование динамической прозрачности, см. macros.txt)
       "alpha": 100,
+      "align": "center",
       // Font options.
       // Параметры шрифта.
       "textFormat": {
@@ -26,7 +27,6 @@
         // Color (dynamic colors allowed, see macros.txt).
         // Цвет (допускается использование динамического цвета, см. macros.txt)
         "color": "0x0000FF",
-        "align": "center",              // Text alignment (left, center, right) /   Выравнивание текста (left, center, right)
         "bold": true,                  // True - bold    / Жирный.
         "italic": false                 // True - italic  / Курсив.
       },
@@ -42,7 +42,7 @@
         "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
         "strength": 1   
       },
-	  // Rising speed of displayed damage (float up speed).
+      // Rising speed of displayed damage (float up speed).
       // Время отображения отлетающего урона.
       "speed": 5,
       // Maximum distance of target for which damage rises.
@@ -55,7 +55,7 @@
       // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
       "blowupMessage": "ammoREKT!"
     },
-	  "damageTextFromPlayer": {
+    "damageTextFromPlayer": {
       // false - disable / не отображать.
       "enabled": true,
       // Axis field coordinates
@@ -89,7 +89,7 @@
         "blur": 3,                      // (0.0 .. 255.0)  / blur            / размытие
         "strength": 1   
       },
-	  // Rising speed of displayed damage (float up speed).
+      // Rising speed of displayed damage (float up speed).
       // Время отображения отлетающего урона.
       "speed": 5,
       // Maximum distance of target for which damage rises.
@@ -102,7 +102,7 @@
       // Текст при взрыве боеукладки (см. описание макросов в macros.txt).
       "blowupMessage": "ammoREKT!"
     },
-	  "damageTextFromSquad": {
+    "damageTextFromSquad": {
       // false - disable / не отображать.
       "enabled": true,
       // Axis field coordinates
@@ -181,7 +181,7 @@
       },
       "format": "{{nick}}"  // формат текста. См. описание макросов в macros.txt
     },
-	// Text field with Vehicle name.
+  // Text field with Vehicle name.
     // Текстовое поле с именем игрока.
     "tankName": {
       "name": "Tank name",          // название текстового поля, ни на что не влияет
@@ -294,7 +294,7 @@
       },
       "format": "<font color='{{x-spotted?#FFBB00|#FFFFFF}}' alpha='{{x-spotted?#FF|#80}}'>{{x-spotted?&#x70;|{{x-sense-on?&#x70;}}}}</font> {{x-overturned?&#x112;}}"  //  формат текста. См. описание макросов в macros.txt
     },
-	// Position of the player
+  // Position of the player
     // Порядковый номер игрока
     "position": {
       "name": "position",             //  название текстового поля, ни на что не влияет
@@ -341,9 +341,6 @@
       // Opacity.
       // Прозрачность.
       "alpha": 100,
-      // Color (currently not in use).
-      // Цвет (в данный момент не используется).
-      "color": null,
       // Maximum scale (default is 100).
       // Максимальный масштаб (по умолчанию 100).
       "maxScale": 100,
@@ -376,8 +373,8 @@
       },
       // Параметры анимации отнимаемого здоровья.
       "damage": {
-        "alpha": 80,                   //     прозрачность
-        "color": "0x0000FF",           //     цвет
+        "alpha": 80,                    //     прозрачность
+        "color": "0x0000FF",            //     цвет
         "fade": 1                       //     время затухания в секундах
       }
     },

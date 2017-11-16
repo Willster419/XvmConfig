@@ -84,12 +84,12 @@
       // Average damage
       // Средний урон
       {
-        "enabled": false,
+        "enabled": true,
         "x": 1, "y": 28, "width": 18, "height": 18, "alpha": "{{v.tdb?|0}}",
         "src": "xvm://res/icons/carousel/damage.png"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "x": 17, "y": 28,
         "format": "<b><font face='$FieldFont' size='12' color='{{v.c_xtdb|#CFCFCF}}'>{{v.tdb%d}}</font></b>",
         "shadow": ${ "def.textFieldShadow" }
@@ -104,12 +104,12 @@
       // Battles count
       // Количество боёв
       {
-        "enabled": false,
+        "enabled": true,
         "x": 158, "y": 17, "align": "right", "width": 13, "height": 13, "alpha": "{{v.battles?|0}}",
         "src": "xvm://res/icons/carousel/battles.png"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "x": 145, "y": 14, "align": "right",
         "format": "<b><font face='$FieldFont' size='12' color='#CFCFCF' alpha='#F0'>{{v.battles}}</font></b>",
         "shadow": ${ "def.textFieldShadow" }
@@ -117,12 +117,12 @@
       // Winrate
       // Процент побед
       {
-        "enabled": false,
+        "enabled": true,
         "x": 158, "y": 32, "align": "right", "width": 13, "height": 13, "alpha": "{{v.winrate?|0}}",
         "src": "xvm://res/icons/carousel/wins.png"
       },
       {
-        "enabled": false,
+        "enabled": true,
         "x": 145, "y": 28, "align": "right",
         "format": "<b><font face='$FieldFont' size='12' color='{{v.c_winrate|#CFCFCF}}'>{{v.winrate%2d~%}}</font></b>",
         "shadow": ${ "def.textFieldShadow" }
