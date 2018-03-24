@@ -47,9 +47,9 @@
       "textFormat": { "size": 7 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{vehicle%.7s~..}}</font>"
     },
-    // Vehicle name, visible, company config
-    // Название техники, видимый, ротный конфиг
-    "vehicleSpottedCompany": {
+    // Vehicle name, visible, alternative mode
+    // Название техники, видимый, альтернативный режим
+    "vehicleSpottedAlt": {
       "$ref": { "path":"def.vehicleSpotted" },
       "y": "{{ally?{{battletype?7|{{squad?7|-1}}}}|-1}}"
     },
@@ -63,9 +63,9 @@
       "textFormat": { "size": 7 },
       "format": "<font color='{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}'>{{name%.7s~..}}</font>"
     },
-    // Player nickname, visible, company config
-    // Ник игрока, видимый, ротный конфиг
-    "nickSpottedCompany": {
+    // Player nickname, visible, alternative mode
+    // Ник игрока, видимый, альтернативный режим
+    "nickSpottedAlt": {
       "$ref": { "path": "def.nickSpotted" },
       "flags": [ "ally", "squadman", "teamKiller", "spotted", "alive" ],
       "format": "<font size='{{battletype?8|{{squad?8|0}}}}' color='{{squad?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|{{tk?{{.minimap.labelsData.colors.txt.{{sys-color-key}}}}|#BFBFBF}}}}'><i>{{name%.7s~..}}</i></font>"

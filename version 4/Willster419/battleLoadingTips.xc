@@ -8,7 +8,7 @@
     // Шаблон иконки клана.
     "clanIcon": {
       "enabled": true,
-      "x": 60, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90,
+      "x": 60, "y": 6, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
     }
   },
@@ -17,8 +17,8 @@
     // Формат часов на экране загрузки боя.
     // http://php.net/date
     "clockFormat": "H:i:s",
-    // true - disable Platoon icons. This blank space can house, for example, clan logos.
-    // true - убрать отображение иконки взвода. На пустое поле можно вывести, например, иконку клана.
+    // true - disable Platoon/rank icons. This blank space can house, for example, clan logos.
+    // true - убрать отображение иконки взвода/ранга. На пустое поле можно вывести, например, иконку клана.
     "removeSquadIcon": false,
     // true - disable rank badge icons
     // true - убрать отображение иконки бейджа ранга
@@ -41,7 +41,7 @@
     // X offset for allies squad icons
     // Смещение по оси X значка взвода союзников
     "squadIconOffsetXLeft": -130,
-    // X offset for enemies squad icons field
+    // X offset for enemies squad icons
     // Смещение по оси X значка взвода противников
     "squadIconOffsetXRight": -130,
     // X offset for allies player names field

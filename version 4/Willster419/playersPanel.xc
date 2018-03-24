@@ -23,7 +23,7 @@
       // Horizontal alignment
       // Выравнивание по горизонтали
       "align": "center",
-      // true - x position is binded to vehicle icon, false - binded to edge of the screen.
+      // true - x position is bound to vehicle icon, false - binded to edge of the screen.
       // true - положение по горизонтали отсчитывается от иконки танка, false - от края экрана.
       "bindToIcon": true,
       // enemy spotted status marker format.
@@ -34,43 +34,43 @@
       "shadow": {}
     },
     "enemyHpLeft": {
-		"x": -43, 
-		"y": 8, 
-		"alpha": "{{a:spotted}}", 
-		"bindToIcon": true, 
-		"format": "<font face='Arial' size='10' color='#FFFFFF'><b>{{hp%4.4s|-----}}/{{hp-max%-4.4s|-----}}</b></font>",
-		"shadow": {}
+    "x": -43,
+    "y": 8,
+    "alpha": "{{a:spotted}}",
+    "bindToIcon": true,
+    "format": "<font face='Arial' size='10' color='#FFFFFF'><b>{{hp%4.4s|-----}}/{{hp-max%-4.4s|-----}}</b></font>",
+    "shadow": {}
     },
     "hpBg": {
-      "x": 0, 
-      "y": 1, 
-      "w": 135, 
-      "h": 2, 
-      "alpha": "{{alive?80|0}}", 
+      "x": 0,
+      "y": 1,
+      "w": 135,
+      "h": 2,
+      "alpha": "{{alive?80|0}}",
       "bgColor": 0
     },
     "hpRatio": {
-      "x": 0, 
-      "y": 1, 
-      "w": "{{hp-ratio:135}}", 
+      "x": 0,
+      "y": 1,
+      "w": "{{hp-ratio:135}}",
       "h": 2,
-      "alpha": "{{alive?80|0}}", 		
+      "alpha": "{{alive?80|0}}",
       "bgColor": "{{player?0xFFDD33|{{c:system}}}}"
     },
     "xTE": {
-      "x": 0, 
+      "x": 0,
       "y": 2,
       "format": "<font color='{{c:xte}}' alpha='{{alive?#FF|#80}}'>{{xte%2s|--}}</font>",
       "shadow": {}
     },
     "VN": {
-      "x": 5, 
+      "x": 5,
       "y": 2,
       "format": "<font color='{{c:r}}'>{{vehicle}}</font>",
       "shadow": {}
     },
     "frags": {
-      "x": -92, 
+      "x": -92,
       "y": 2,
       "align": "center",
       "bindToIcon": true,
@@ -78,7 +78,7 @@
       "shadow": {}
     },
     "frags2": {
-      "x": -92, 
+      "x": -92,
       "y": 2,
       "align": "center",
       "bindToIcon": true,

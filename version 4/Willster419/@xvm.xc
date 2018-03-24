@@ -13,7 +13,7 @@
  *
  * Внимание! Кодировка файлов должна оставаться UTF8+BOM. В противном случае
  * вместо кириллицы в игре будут пустые глифы.
- * Для редактирования используйте Notepad++. http://goo.gl/y6iet
+ * Для редактирования используйте Notepad++. https://goo.gl/y6iet
  * В случае блокнота Windows: Сохранить как -> Кодировка: UTF.
  */
 {
@@ -58,15 +58,15 @@
 
     // Config last modified.
     // Дата последней модификации конфига.
-    "date": "15.11.2017",
+    "date": "03.23.2018",
 
     // Supported version of the game.
     // Поддерживаемая версия игры.
-    "gameVersion": "0.9.20.1.3",
+    "gameVersion": "1.0.0",
 
     // The minimum required version of the XVM mod.
     // Минимально необходимая версия мода XVM.
-    "modMinVersion": "7.2.1"
+    "modMinVersion": "7.5.0"
   },
 
   // Parameters for login screen.
@@ -183,5 +183,9 @@
 
   // XMQP services settings
   // Настройки сервисов XMQP
-  "xmqp": ${"xmqp.xc":"xmqp"}
+  "xmqp": ${"xmqp.xc":"xmqp"},
+  
+  // Various settings for advanced users
+  // Различные настройки для продвинутых пользоватей
+  "tweaks": ${"tweaks.xc":"tweaks"}
 }

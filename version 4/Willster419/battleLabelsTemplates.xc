@@ -151,10 +151,10 @@
       "screenVAlign": "center",
       "shadow": { "distance": 1, "angle": 90, "alpha": 80, "blur": 5, "strength": 3 },
       "textFormat": {"align": "center", "color": "0xF4EFE8", "size": 16 },
-      "format": "ПОЖАР"
+      "format": "FIRE"
     },
     "totalEfficiency": {
-      "enabled": true,
+      "enabled": false,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
       "y": "{{pp.mode=0?65|35}}",
