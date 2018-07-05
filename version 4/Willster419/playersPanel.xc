@@ -23,7 +23,7 @@
       // Horizontal alignment
       // Выравнивание по горизонтали
       "align": "center",
-      // true - x position is bound to vehicle icon, false - binded to edge of the screen.
+      // true - x position is bound to vehicle icon, false - bound to edge of the screen.
       // true - положение по горизонтали отсчитывается от иконки танка, false - от края экрана.
       "bindToIcon": true,
       // enemy spotted status marker format.
@@ -125,7 +125,7 @@
   // Parameters of the Players Panels ("ears").
   // Параметры панелей игроков ("ушей").
   "playersPanel": {
-    // false - Disable.
+    // false - disable.
     // false - отключить.
     "enabled": true,
     // Opacity percentage of the panels. 0 - transparent, 100 - opaque.
@@ -137,7 +137,7 @@
     // true - disable background of the selected player.
     // true - убрать подложку выбранного игрока.
     "removeSelectedBackground": false,
-    // true - Remove the Players Panel mode switcher (buttons for changing size).
+    // true - remove the Players Panel mode switcher (buttons for changing size).
     // true - убрать переключатель режимов ушей мышкой.
     "removePanelsModeSwitcher": false,
     // Start panels mode. Possible values: "none", "short", "medium", "medium2", "large".
@@ -258,6 +258,9 @@
       // Width of the rank badge column. Default is 24.
       // Ширина поля бейджа ранга. По умолчанию: 24.
       "rankBadgeWidth": 24,
+      // Transparency of the rank badge
+      // Прозрачность бейджа ранга
+      "rankBadgeAlpha": "{{alive?100|70}}",
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -324,7 +327,7 @@
       // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
       // Допустимые названия: "frags", "badge", "nick", "vehicle".
-      "standardFields": [ "frags", "nick" ],
+      "standardFields": [ "frags", "badge", "nick" ],
       // Width of area for switching to "large" mode on mouse over
       // Ширина области переключения в режим "large" при наведении мыши
       "expandAreaWidth": 230,
@@ -367,6 +370,9 @@
       // Width of the rank badge column. Default is 24.
       // Ширина поля бейджа ранга. По умолчанию: 24.
       "rankBadgeWidth": 24,
+      // Transparency of the rank badge
+      // Прозрачность бейджа ранга
+      "rankBadgeAlpha": "{{alive?100|70}}",
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -478,6 +484,9 @@
       // Width of the rank badge column. Default is 24.
       // Ширина поля бейджа ранга. По умолчанию: 24.
       "rankBadgeWidth": 24,
+      // Transparency of the rank badge
+      // Прозрачность бейджа ранга
+      "rankBadgeAlpha": "{{alive?100|70}}",
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
@@ -546,7 +555,7 @@
       // Available names: "frags", "badge", "nick", "vehicle".
       // Отображаемые стандартные поля в данном режиме, и их порядок.
       // Допустимые названия: "frags", "badge", "nick", "vehicle".
-      "standardFields": [ "frags", "nick", "vehicle" ],
+      "standardFields": [ "frags", "badge", "nick", "vehicle" ],
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
@@ -586,6 +595,9 @@
       // Width of the rank badge column. Default is 24.
       // Ширина поля бейджа ранга. По умолчанию: 24.
       "rankBadgeWidth": 24,
+      // Transparency of the rank badge
+      // Прозрачность бейджа ранга
+      "rankBadgeAlpha": "{{alive?100|70}}",
       // Offset of X value for player name column.
       // Смещение координаты X для поля имени игрока.
       "nickXOffsetLeft": 0,
