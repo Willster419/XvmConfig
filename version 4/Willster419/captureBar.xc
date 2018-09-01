@@ -4,7 +4,7 @@
  */
 {
   "captureBar": {
-    // false - Disable
+    // false - disable
     // false - Отключить
     "enabled": true,
     // Y value (34 for vanilla client)
@@ -19,7 +19,7 @@
     // Enemies capturing ally base
     // Противник захватывает базу союзников
     "enemy": {
-      // Сapture bar color (default: use system color)
+      // Capture bar color (default: use system color)
       // Цвет полосы захвата (по умолчанию используется системный цвет)
       "сolor": null,
       // Title textfield (center)

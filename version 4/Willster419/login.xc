@@ -13,10 +13,13 @@
     // Auto confirm old replays playing
     // Автоматически подтверждать проигрывание старых реплеев
     "confirmOldReplays": false,
+    // Do not show the specified servers in the servers list, for example, ["RU1", "RU3"]
+    // Не показывать заданные серверы в выпадающем списке серверов, например, ["RU1", "RU3"]
+    "disabledServers": [],
     // Ping servers
     // Пинг серверов
     "pingServers": {
-      // true - Enable display of ping to the servers
+      // true - enable display of ping to the servers
       // true - показывать пинг до серверов
       "enabled": false,
       // Update interval, in ms
@@ -66,6 +69,9 @@
       // text to show in case of error
       // текст показываемый в случае ошибки
       "errorString": "--",
+      // List of ignored servers, for example, ["RU1", "RU3"]
+      // Список игнорируемых серверов, например, ["RU1", "RU3"]
+      "ignoredServers": [],
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -117,7 +123,7 @@
       }
     },
     "onlineServers": {
-      // true - Enable display online of servers
+      // true - enable display online of servers
       // true - показывать онлайн серверов
       "enabled": false,
       // Axis field coordinates
@@ -164,6 +170,9 @@
       // text to show in case of error
       // текст показываемый в случае ошибки
       "errorString": "--k",
+      // List of ignored servers, for example, ["RU1", "RU3"]
+      // Список игнорируемых серверов, например, ["RU1", "RU3"]
+      "ignoredServers": [],
       // Text style
       // Стиль текста
       "fontStyle": {

@@ -33,6 +33,33 @@
       // настройки тени (см. ниже).
       "shadow": {}
     },
+    // XMQP service marker definition.
+    // Шаблон маркера сервиса XMQP.
+    "xmqpServiceMarker": {
+      "enabled": true,
+      "x": 88, "y": -2, "align": "center", "bindToIcon": true,
+      "textFormat": {
+        "font": "xvm",
+        "size": 24
+      },
+      "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
+      "shadow": {}
+    },
+    // Clan icon.
+    // Иконка клана.
+    "clanIcon": {
+      "enabled": false,
+      "x": 40, "y": 7, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
+      "src": "{{clanicon}}"
+      //"format": "<img src='{{clanicon}}' width='16' height='16'>"
+    },
+    // XVM user marker.
+    // Маркер пользователя XVM.
+    "xvmUserMarker": {
+      "enabled": false,
+      "x": 39, "y": 13, "bindToIcon": true,
+      "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
+    },
     "enemyHpLeft": {
     "x": -43,
     "y": 8,
@@ -84,42 +111,6 @@
       "bindToIcon": true,
       "format": "{{frags}}",
       "shadow": {}
-    },
-    // XMQP service marker definition.
-    // Шаблон маркера сервиса XMQP.
-    "xmqpServiceMarker": {
-      "enabled": true,
-      "x": 88,
-      "y": -2,
-      "align": "center", 
-      "bindToIcon": true,
-      "textFormat": {
-        "font": "xvm",
-        "size": 24
-      },
-      "format": "<font color='{{alive?{{x-spotted?#FFBB00|{{x-sense-on?#D9D9D9|#BFBFBF}}}}|#FFFFFF}}' alpha='{{alive?#FF|#80}}'>{{alive?{{x-spotted?&#x70;|{{x-sense-on?&#x70;|{{x-enabled?&#x7A;}}}}}}}}</font>",
-      "shadow": {}
-    },
-    "xvmUserMarker": {
-    "enabled": false,
-    "x": 39,
-    "y": 13,
-    "bindToIcon": true,
-      "src": "xvm://res/icons/xvm/xvm-user-{{xvm-user|none}}.png"
-    },
-    // Clan icon definition.
-    // Шаблон иконки клана.
-    "clanIcon": {
-      "enabled": false,
-      "x": 40,
-      "y": 7,
-      "width": 16,
-      "height": 16,
-      "align": "center",
-      "alpha": 90,
-      "bindToIcon": true,
-      "src": "{{clanicon}}"
-      //"format": "<img src='{{clanicon}}' width='16' height='16'>"
     }
   },
   // Parameters of the Players Panels ("ears").
@@ -222,8 +213,8 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
-      // transparency of the squad icon
-      // прозрачность иконки взвода
+      // Transparency of the squad icon
+      // Прозрачность иконки взвода
       "squadIconAlpha": 100,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
@@ -233,8 +224,8 @@
       // Смещение координаты X для уровня танка.
       "vehicleLevelXOffsetLeft": 20,
       "vehicleLevelXOffsetRight": 20,
-      // transparency of vehicle level
-      // прозрачность уровня танка
+      // Transparency of vehicle level
+      // Прозрачность уровня танка
       "vehicleLevelAlpha": 100,
       // Offset of X value for frags column.
       // Смещение координаты X для поля фрагов.
@@ -334,8 +325,8 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
-      // transparency of the squad icon
-      // прозрачность иконки взвода
+      // Transparency of the squad icon
+      // Прозрачность иконки взвода
       "squadIconAlpha": 100,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
@@ -345,8 +336,8 @@
       // Смещение координаты X для уровня танка.
       "vehicleLevelXOffsetLeft": 20,
       "vehicleLevelXOffsetRight": 20,
-      // transparency of vehicle level
-      // прозрачность уровня танка
+      // Transparency of vehicle level
+      // Прозрачность уровня танка
       "vehicleLevelAlpha": 100,
       // Offset of X value for frags column.
       // Смещение координаты X для поля фрагов.
@@ -448,8 +439,8 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
-      // transparency of the squad icon
-      // прозрачность иконки взвода
+      // Transparency of the squad icon
+      // Прозрачность иконки взвода
       "squadIconAlpha": 100,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
@@ -459,8 +450,8 @@
       // Смещение координаты X для уровня танка.
       "vehicleLevelXOffsetLeft": 20,
       "vehicleLevelXOffsetRight": 20,
-      // transparency of vehicle level
-      // прозрачность уровня танка
+      // Transparency of vehicle level
+      // Прозрачность уровня танка
       "vehicleLevelAlpha": 100,
       // Offset of X value for frags column.
       // Смещение координаты X для поля фрагов.
@@ -559,8 +550,8 @@
       // true - disable platoon icons
       // true - убрать отображение иконок взвода
       "removeSquadIcon": false,
-      // transparency of the squad icon
-      // прозрачность иконки взвода
+      // Transparency of the squad icon
+      // Прозрачность иконки взвода
       "squadIconAlpha": 100,
       // Offset of X value for vehicle icon.
       // Смещение координаты X для иконки танка.
@@ -570,8 +561,8 @@
       // Смещение координаты X для уровня танка.
       "vehicleLevelXOffsetLeft": 20,
       "vehicleLevelXOffsetRight": 20,
-      // transparency of vehicle level
-      // прозрачность уровня танка
+      // Transparency of vehicle level
+      // Прозрачность уровня танка
       "vehicleLevelAlpha": 100,
       // Offset of X value for frags column.
       // Смещение координаты X для поля фрагов.

@@ -8,18 +8,12 @@
     // Шаблон иконки клана.
     "clanIcon": {
       "enabled": true,
-      "x": 10,
-      "y": 4,
-      "width": 16,
-      "height": 16,
-      "align": "center",
-      "alpha": 90,
-      "bindToIcon": true,
+      "x": 10, "y": 4, "width": 16, "height": 16, "align": "center", "alpha": 90, "bindToIcon": true,
       "src": "{{clanicon}}"
     }
   },
   "statisticForm": {
-    // true - Disable Platoon/rank icons.
+    // true - disable Platoon/rank icons.
     // true - убрать отображение иконки взвода/ранга.
     "removeSquadIcon": false,
     // true - disable rank badge icons
@@ -47,16 +41,16 @@
     // Показывать рамку для поля фрагов (полезно для настройки конфига)
     "fragsFieldShowBorder": false,
     // X offset for allies squad icons
-    // Cмещение по оси X значка взвода союзников
+    // Смещение по оси X значка взвода союзников
     "squadIconOffsetXLeft": 0,
     // X offset for enemies squad icons
-    // Cмещение по оси X значка взвода противников
+    // Смещение по оси X значка взвода противников
     "squadIconOffsetXRight": 0,
     // X offset for allies player names field
-    // Cмещение по оси X поля ника союзников
+    // Смещение по оси X поля ника союзников
     "nameFieldOffsetXLeft": 0,
     // X offset for enemies player names field
-    // Cмещение по оси X поля ника противников
+    // Смещение по оси X поля ника противников
     "nameFieldOffsetXRight": 0,
     // Width of allies player names field
     // Ширина поля ника союзников
@@ -65,10 +59,10 @@
     // Ширина поля ника противников
     "nameFieldWidthRight": 300,
     // X offset for "formatLeftVehicle" field
-    // Cмещение по оси X поля названия танка союзников
+    // Смещение по оси X поля названия танка союзников
     "vehicleFieldOffsetXLeft": 4,
     // X offset for "formatRightVehicle" field
-    // Cмещение по оси X поля названия танка противников
+    // Смещение по оси X поля названия танка противников
     "vehicleFieldOffsetXRight": 4,
     // Width of "formatLeftVehicle" field
     // Ширина поля названия танка союзников
