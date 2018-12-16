@@ -54,8 +54,6 @@
     /*
     "battleDamageLogPanel"          - Панель: Информирование в бою - История событий         / Panel: Battle Notifications - Log
     "battleLoading"                 - Экран загрузки боя                                     / Battle Loading screen
-
-
     "battleMessenger"               - Чат                                                    / Chat
     "battleTicker"                  - ?                                                      / ?
     "battleTimer"                   - Таймер боя                                             / Battle timer
