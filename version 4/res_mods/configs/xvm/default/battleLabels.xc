@@ -11,8 +11,8 @@
     // * кастомные поля можно отдельно отключать и включать с помощью "enabled" в их настройках.
     // * поддерживается расширенный формат, см. extra-field.txt
     "formats": [
-      ${ "battleLabelsTemplates.xc":"def.hitlogHeader" },
-      ${ "battleLabelsTemplates.xc":"def.hitlogBody" },
+      ${ "battleLabelsTemplates.xc":"def.hitLogHeader" },
+      ${ "battleLabelsTemplates.xc":"def.hitLogBody" },
       ${ "battleLabelsTemplates.xc":"def.totalHP" },
       ${ "battleLabelsTemplates.xc":"def.avgDamage" },
       ${ "battleLabelsTemplates.xc":"def.mainGun" },
@@ -24,7 +24,7 @@
       ${ "battleLabelsTemplates.xc":"def.repairTimeEngine" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeGun" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeTurret" },
-      ${ "battleLabelsTemplates.xc":"def.repairTimeTracks" }, 
+      ${ "battleLabelsTemplates.xc":"def.repairTimeComplex" }, 
       ${ "battleLabelsTemplates.xc":"def.repairTimeSurveying" },
       ${ "battleLabelsTemplates.xc":"def.repairTimeRadio" }
     ]

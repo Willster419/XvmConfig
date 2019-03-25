@@ -6,29 +6,40 @@
   // Definitions.
   // Шаблоны.
   "def": {
-    "hitlogHeader": {
+    "hitLogHeader": {
       "enabled": false,
-      "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
+      "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
       "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?65|40}}",
-      "width": 500,
-      "height": 1000,
+      "y": "{{pp.mode=0?65|35}}",
+      "width": 300,
+      "height": 22,
       "textFormat": { "color": "0xF4EFE8", "size": 15 },
-      "format": "{{hitlog-header}}"
-      // Format of the full hitlog (header and body)
-      // Формат полного хит-лога (шапка и тело)
-      // "format": "{{hitlog-header}}\n{{hitlog-body}}"
+      "format": "{{py:xvm.totalDamage=0?{{l10n:Hits}}: <font size='13'>#0</font>|{{l10n:Hits}}: <font size='13'>#{{py:xvm.numberHitsDealt}}</font> {{l10n:Total}}: <b>{{py:xvm.totalDamage}}</b> {{l10n:Last}}: <font color='{{c:dmg-kind}}'><b>{{py:xvm.dmg}}</b></font>}}"
     },
-    "hitlogBody": {
+    // Log of applied damage.
+    // Лог нанесенного урона.
+    "hitLogBody": {
       "enabled": false,
-      "hotKeyCode": 56, "onHold": "true", "visibleOnHotKey": false,
-      "updateEvent": "ON_DAMAGE_CAUSED, ON_PANEL_MODE_CHANGED",
-      "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?95|65}}",
+      "updateEvent": "PY(ON_HIT_LOG), ON_PANEL_MODE_CHANGED",
+      "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},{{py:xvm.hitLog.hLog_x}})}}}}",
+      "y": "{{pp.mode=0?90|{{py:xvm.hitLog.hLog_y}}}}",
       "width": 500,
       "height": 1000,
+      "layer": "bottom",
       "textFormat": { "color": "0xF4EFE8", "size": 15 },
-      "format": "{{hitlog-body}}"
+      "format": "{{py:xvm.hitLog.hLog}}",
+      "mouseEvents": {
+        "mouseDown": "hitLog_mouseDown",
+        "mouseUp": "hitLog_mouseUp",
+        "mouseMove": "hitLog_mouseMove"
+      }
+    },
+    // Background of the log of applied damage.
+    // Подложка лога нанесенного урона.
+    "hitLogBackground": {
+      "enabled": false,
+      "$ref": { "path":"def.hitLogBody" },
+      "format": "{{py:xvm.hitLog.hLogBackground}}"
     },
     // Total hp indicator.
     // Индикатор общего HP команд.
@@ -47,7 +58,7 @@
     // Средний урон на текущей технике.
     "avgDamage": {
       "enabled": false,
-      "updateEvent": "PY(ON_UPDATE_HP)",
+      "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
       "x": -170,
       "y": 30,
       "screenHAlign": "center",
@@ -60,7 +71,7 @@
     // Порог необходимый для получения достижения "Основной калибр".
     "mainGun": {
       "enabled": false,
-      "updateEvent": "PY(ON_UPDATE_HP)",
+      "updateEvent": "PY(ON_TOTAL_EFFICIENCY)",
       "x": 170,
       "y": 30,
       "screenHAlign": "center",
@@ -100,7 +111,7 @@
         "mouseWheel": "dLog_mouseWheel"
       }
     },
-    // TODO (see damageLog.xc).
+    // Background of the log of the received damage (see damageLog.xc).
     // Подложка лога полученного урона (см. damageLog.xc).    
     "damageLogBackground": {
       "enabled": false,
@@ -206,13 +217,13 @@
     },
     // Repair timer for tracks
     // Таймер ремонта сбитых гусениц
-    "repairTimeTracks": {
+    "repairTimeComplex": {
       "$ref": { "path":"def.repairTimeItem" },
       "enabled": true,
       "updateEvent": "PY(ON_TRACKS_UPDATE)",
       "x": 177,
       "y": -147,
-      "format": "<b>{{py:repairTimeTracks%0.1f}}</b>"
+      "format": "<b>{{py:repairTimeComplex%0.1f}}</b>"
     },
     // Repair timer for surveying device
     // Таймер ремонта приборов наблюдения
