@@ -67,11 +67,11 @@
     },
     "hpBg": {
       "enabled": true,
-      "x": 0, "y": 1, "w": 135, "h": 2, "alpha": "{{alive?80|0}}", "bgColor": 0
+      "x": 0, "y": 1, "width": 135, "height": 2, "alpha": "{{alive?80|0}}", "bgColor": 0
     },
     "hpRatio": {
       "enabled": true,
-      "x": 0, "y": 1, "w": "{{hp-ratio:135}}", "h": 2, "alpha": "{{alive?80|0}}", "bgColor": "{{player?0xFFDD33|{{c:system}}}}"
+      "x": 0, "y": 1, "width": "{{hp-ratio:135}}", "height": 2, "alpha": "{{alive?80|0}}", "bgColor": "{{player?0xFFDD33|{{c:system}}}}"
     }
   },
   // Parameters of the Players Panels ("ears").
