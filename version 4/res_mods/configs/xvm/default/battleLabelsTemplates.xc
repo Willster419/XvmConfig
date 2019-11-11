@@ -1,5 +1,5 @@
 ﻿/**
- * Battle interface text fields.
+ * Battle inteface text fields.
  * Текстовые поля боевого интерфейса.
  */
 {
@@ -47,8 +47,8 @@
     "totalEfficiency": {
       "enabled": false,
       "updateEvent": "PY(ON_TOTAL_EFFICIENCY), ON_PANEL_MODE_CHANGED",
-      "x": "{{pp.mode=0?5|{{py:sum({{pp.widthLeft}},50)}}}}",
-      "y": "{{pp.mode=0?65|35}}",
+      "x": "{{pp.mode=0?{{battletype-key=epic_battle?240|5}}|{{py:sum({{pp.widthLeft}},50)}}}}",
+      "y": "{{pp.mode=0?{{battletype-key=epic_battle?55|65}}|35}}",
       "width": "{{py:xvm.isStuns?350|260}}",
       "height": 22,
       "textFormat": { "size": 16 },
