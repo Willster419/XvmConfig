@@ -190,6 +190,6 @@
   "xmqp": ${"xmqp.xc":"xmqp"},
 
   // Various settings for advanced users.
-  // Различные настройки для продвинутых пользователей.
+  // Различные настройки для продвинутых пользоватей.
   "tweaks": ${"tweaks.xc":"tweaks"}
 }
