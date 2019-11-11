@@ -343,8 +343,8 @@
     // Уровень танка.
     "levelIcon": {
       "enabled": true,  // false - disable        / не отображать.
-      "x": 3,            // Position on the X axis / Положение по оси X.
-      "y": -29,          // Position on the Y axis / Положение по оси Y.
+      "x": 0,            // Position on the X axis / Положение по оси X.
+      "y": -25,          // Position on the Y axis / Положение по оси Y.
       "alpha": 100       // Opacity                / Прозрачность.
     },
     // Markers "Help!" and "Attack!".
@@ -447,8 +447,8 @@
     // Уровень танка.
     "levelIcon": {
       "enabled": true,
-      "x": 3,
-      "y": -29,
+      "x": 0,
+      "y": -25,
       "alpha": 100
     },
     // Markers "Help!" and "Attack!".
