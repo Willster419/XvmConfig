@@ -31,15 +31,15 @@
     // true - show info windows with the battle results in the "Ranked battle" mode.
     // true - показывать информационные окна результатов боя в режиме "Ранговый бой".
     "showRankedBattleResults": true,
-    // Consumables panel - show/hide the number of consumables and directives.
+    // Equipment panel - show/hide the number of equipment and directives.
     // Панель снаряжения - показывать/прятать количество снаряжения и инструкций.
     "equipmentPanel": {
-      //true - show the remaining quantity of consumables in depot.
-      //true - показать оставшиеся количество снаряжения на складе.
-      "showConsumablesCount": true,
+      //true - show the remaining quantity of equipment in depot.
+      //true - показать оставшиеся количество оборудования на складе.
+      "showNumberEquipment": true,
       //true - show the remaining quantity of directives in depot.
       //true - показать оставшиеся количество инструкций на складе.
-      "showDirectivesCount": false
+      "showNumberDirectives": true
     },
     // "Combat Intelligence" - show/hide notifications in the main window and counters in the menu.
     // "Полевая почта" - показывать/прятать уведомления в главном окне и счетчики в меню.
@@ -202,8 +202,8 @@
       "updateInterval": 10000,
       // Axis field coordinates.
       // Положение поля по осям.
-      "x": 65,
-      "y": 53,
+      "x": 85,
+      "y": 52,
       // Horizontal alignment of field at screen ("left", "center", "right").
       // Горизонтальное выравнивание поля на экране ("left", "center", "right").
       "hAlign": "left",
@@ -228,13 +228,13 @@
       "columnGap": 3,
       // Leading between lines.
       // Пространство между строками.
-      "leading": 0,
+      "leading": 2,
       // layer - "bottom", "normal" (default), "top".
       // слой - "bottom", "normal" (по-умолчанию), "top".
       "layer": "normal",
       // true - show title "Ping".
       // true - показывать заголовок "Пинг".
-      "showTitle": false,
+      "showTitle": true,
       // true - show server names in list.
       // true - показывать названия серверов в списке.
       "showServerName": true,
@@ -371,10 +371,10 @@
         // Different colors depending on people online.
         // Разные цвета в зависимости от количества игроков.
         "color": {
-          "great": "0x60ff00",  // Отличный
-          "good":  "0xF8F400",  // Хороший
-          "poor":  "0xFE7903",  // Так себе
-          "bad":   "0xFE0E00"   // Плохой
+          "great": "0xFFCC66", // Отличный
+          "good":  "0xE5E4E1", // Хороший
+          "poor":  "0x96948F", // Так себе
+          "bad":   "0xD64D4D"  // Плохой
         },
         // Color for server name and delimiter (for example, "0x8080FF"). Empty string "" - use same color as online value.
         // Цвет для названия сервера и разделителя (например, "0x8080FF"). Пустая строка "" - использовать цвет значения онлайна.
